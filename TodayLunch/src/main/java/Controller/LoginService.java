@@ -18,7 +18,7 @@ public class LoginService extends HttpServlet {
 
 	protected void service(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		System.out.println("로그인되었습니다");
+		System.out.println("LoginService");
 		request.setCharacterEncoding("UTF-8");
 
 		String email = request.getParameter("email");
@@ -46,7 +46,7 @@ public class LoginService extends HttpServlet {
 			session.setAttribute("info", info);
 		}else {
 			System.out.println("로그인 실패");
-			response.sendRedirect("MainPage.jsp");
+			response.sendRedirect("login.jsp");
 
 		}
 

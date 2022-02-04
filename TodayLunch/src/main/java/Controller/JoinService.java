@@ -45,7 +45,7 @@ public class JoinService extends HttpServlet {
 		//4.실행 결과에 따라서 다른페이지 출력하기
 		
 		if(cnt>0) {
-			System.out.println("로그인 성공 ");
+			System.out.println("회원가입 성공 ");
 			
 			//세션으로 회원가입 성공시 email값 유지시키기
 			response.sendRedirect("join_success.jsp");
@@ -54,8 +54,8 @@ public class JoinService extends HttpServlet {
 			session.setAttribute("email",dto.getEmail());
 			
 		}else {
-			System.out.println("회원가임 실패");
-			response.sendRedirect("MainPage.jsp");
+			System.out.println("회원가입 실패");
+			response.sendRedirect("MainPageTest.jsp");
 		}
 		
 	}
