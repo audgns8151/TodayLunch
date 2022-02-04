@@ -46,7 +46,7 @@ public class LoginService extends HttpServlet {
 			session.setAttribute("info", info);
 		}else {
 			System.out.println("로그인 실패");
-			response.sendRedirect("login.jsp");
+			response.sendRedirect("Login.jsp?check=fail");
 
 		}
 

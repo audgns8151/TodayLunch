@@ -17,7 +17,7 @@ public class JoinService extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		System.out.println("[jJoinService}");
+		System.out.println("JoinService");
 		
 		//1. post방식 인코딩
 		request.setCharacterEncoding("UTF-8");
@@ -26,6 +26,7 @@ public class JoinService extends HttpServlet {
 		String email=request.getParameter("email");
 		String pw=request.getParameter("pw");
 		String nickname=request.getParameter("nickname");
+		String goo=request.getParameter("goo");
 		String dong=request.getParameter("dong");
 		
 		MemberDTO dto=new MemberDTO(email, pw, nickname, dong);
@@ -35,6 +36,8 @@ public class JoinService extends HttpServlet {
 		System.out.println("pw:"+pw);
 		System.out.println("tel:"+nickname);
 		System.out.println("address:"+dong);
+		System.out.println("address:"+goo);
+		
 		
 	
 		
@@ -55,7 +58,7 @@ public class JoinService extends HttpServlet {
 			
 		}else {
 			System.out.println("회원가입 실패");
-			response.sendRedirect("MainPageTest.jsp");
+			response.sendRedirect("SignUp.jsp");
 		}
 		
 	}
