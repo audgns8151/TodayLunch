@@ -4637,6 +4637,12 @@ window.application = new Application();
 		<select name="dong">
 		<option value = "동명동">동명동</option>
 		<option value = "충장동">충장동</option>
+		<option value = "계림동">계림동</option>
+		<option value = "산수동">산수동</option>
+		<option value = "지산동">지산동</option>
+		<option value = "서남동">서남동</option>
+		<option value = "학동">학동</option>
+		<option value = "지원동">지원동</option>
 		</select>
 	</div>
 	<div id="n_375_bl" style="z-index:99">

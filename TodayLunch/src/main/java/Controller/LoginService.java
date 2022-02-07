@@ -40,7 +40,8 @@ public class LoginService extends HttpServlet {
 		//성공실패 다지기
 		if(info!=null) {
 			System.out.println("로그인 성공");
-			response.sendRedirect("MainPage.jsp");
+			
+			response.sendRedirect("Main.jsp?check=success");
 		
 			HttpSession session=request.getSession();
 			session.setAttribute("info", info);

@@ -1,0 +1,46 @@
+create table t_food(f_type varchar2(50),f_image varchar2(100),f_explain varchar2(4000));
+select * from T_FOOD
+
+insert into t_food 
+values('심심한', '1.jpg', '부드러운 식감과 씹을 때마다 입안 전체에 퍼지는 고소한 육즙까지 착착 달라붙는 육회같은 당신에게 추천합니다')
+insert into t_food
+values('심심한', '2.jpg', '발사믹 드레싱의 세련됨과 닭가슴살의 담백함의 섬세한 당신! 균형잡힌 건강한 맛 발사믹 닭가슴살 샐러드를 추천합니다')
+insert into t_food
+values('기름진', '3.jpg', '얼얼한 세상에 치인 당신! 풍요로운 맛이 공존하는 매콤한 반전 사천쟁반짜장을 추천합니다.')
+insert into t_food
+values('매콤한', '4.jpg', '치즈처럼 어디로 튈지 모르는 천진난만한 당신! 쭉쭉 늘어나는 치즈로 지구 한바퀴 치즈 떡볶이를 추천합니다' )
+insert into t_food
+values('심심한', '5.jpg', '한 입 베어물면 수제버거처럼 알면 알수록 몰랐던 매력이 뿜어져 나오는 당신! 육즙 가득 수제버거 추천합니다')
+insert into t_food
+values('아무거나', '6.jpg',  '묵은지 광어초밥 같은 당신은 사람들에게 좋은 영감을 제공해주는 당신! 쫄깃한데 아작한 초밥을 추천합니다')
+insert into t_food
+values('기름진', '7.jpg', '부드러운 식감과 씹을때마다 입안 전체에 고소한 육즙까지 입에 착착 달라붙는 당신! 연어덮밥을 추천합니다')
+insert into t_food
+values('기름진', '8.jpg', '피자처럼 감정적인 속내위에 성숙해 보이는 겉모습이 공존하는 당신! 아메리칸 피자의 클래식 페퍼로니 피자를 추천합니다')
+insert into t_food
+values('아무거나', '9.jpg', '풍부한 표현력은 촉촉한 치킨의 속살처럼 사람들을 감동시키군요! 바삭함과 달콤함의 치킨덮밥 추천합니다.')
+insert into t_food
+values('칼칼한', '10.jpg', '당신의 화끈한 매력에 사람들은 데일지도 모른다구요! 프리미엄 맵짠맵짠 김치찌개를 추천합니다')
+insert into t_food
+values('심심한', '11.jpg', '다양한 재료들로 다채로운 당신에게 순정의 맛을 자랑하는 백반이 빠지면 섭하지! 고소한 백반을 추천합니다')
+insert into t_food
+values('심심한', '12.jpg',  '하얀 쌀밥에 간장 새우처럼 상반되는 매력이 공존하는 당신! 손이가요 손이가 간장새우덮밥을 추천합니다')
+insert into t_food
+values('칼칼한', '13.jpg', '보글보글 부대찌개 처럼 친해지면 매력이 끓어오르는 당신 ! 햄이랑 소세지 다 때려박은 얼큰한 부대찌개를 추천합니다')
+insert into t_food
+values('칼칼한', '14.jpg', '속까지 든든하게 해주는 뜨끈한 순대국밥처럼 정신력이 강하고 때론 침착한 당신! 뜨끈한 한 뚝배기 순대국밥 추천합니다')
+insert into t_food
+values('아무거나', '15.jpg', '짭조름하고 부드러운 식감처럼 한 번 맛 보면 멈출 수 없는 갈비찜 같은 팜므파탈의 당신!임금님도 좋아했던 단짠단짠 갈비찜을 추천합니다')
+insert into t_food
+values('아무거나', '17.jpg', '알록달록 월남쌈처럼 다채로운 매력을 가진 당신! 채소 가득 알록달록 샤브샤브를 추천합니다.')
+insert into t_food
+values('아무거나', '18.jpg', '심심하나 어딘가 모를 묘한 매력으로 사람을 빠져들게 하는 당신! 얼음 동동 띄운 상큼한 냉면을 추천합니다.')
+insert into t_food
+values('매콤한', '19.jpg',  '마음이 따뜻하고 이야기 하는 것을 좋아하는 당신! 뜨끈하고 진한 국물의 차슈라멘을 추천합니다.')
+insert into t_food
+values('아무거나', '20.jpg', '통통 튀는 천진난만하지만 은근히 섬세한 매력이 공존하는 당신! 탱글탱글 오믈렛과 고소한 라이스의 오므라이스를 추천합니다')
+insert into t_food
+values()
+
+
+select * from t_food

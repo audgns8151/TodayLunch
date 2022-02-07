@@ -51,7 +51,7 @@ public class JoinService extends HttpServlet {
 			System.out.println("회원가입 성공 ");
 			
 			//세션으로 회원가입 성공시 email값 유지시키기
-			response.sendRedirect("join_success.jsp");
+			response.sendRedirect("Login.jsp?check=success");
 			HttpSession session=request.getSession();
 			
 			session.setAttribute("email",dto.getEmail());

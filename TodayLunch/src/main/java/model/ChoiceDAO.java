@@ -21,10 +21,15 @@ public class ChoiceDAO {
 		try {
 
 			Class.forName("oracle.jdbc.driver.OracleDriver");
+//
+//			String url = "jdbc:oracle:thin:@project-db-stu.ddns.net:1524:xe";
+//			String dbid = "campus_e_1_0115";
+//			String dbpw = "smhrd1";
+			String url = "jdbc:oracle:thin:@localhost:1521:xe";
+			String dbid = "hr";
+			String dbpw = "hr";
+			
 
-			String url = "jdbc:oracle:thin:@project-db-stu.ddns.net:1524:xe";
-			String dbid = "campus_e_1_0115";
-			String dbpw = "smhrd1";
 			conn = DriverManager.getConnection(url, dbid, dbpw);
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -72,10 +77,9 @@ public class ChoiceDAO {
 					String type = rs.getString(1);
 					String image = rs.getString(2);
 					String explain = rs.getString(3);
-					
 				ChoiceDTO dto = new ChoiceDTO(type, image, explain); //String type, String image, String explain
 					list.add(dto);
-					
+				
 				}
 				
 			} catch (Exception e) {

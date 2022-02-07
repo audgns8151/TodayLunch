@@ -4304,6 +4304,7 @@ window.application = new Application();
 </head>
 <body>
 <form id ="input_btn" action="ChoiceService" method="post">
+<input type="hidden" name="Value" id="hid" value=""/>
 <div id="Choice3">
 	<div id="n___">
 		<span>맞춤 메뉴 추천 서비스</span>
@@ -4349,35 +4350,27 @@ window.application = new Application();
 		<rect id="Area_ba" rx="4" ry="4" x="0" y="0" width="129" height="50">
 		</rect>
 	</svg>
-	<button id="Value">심심한</button>
+	<button id="Value" onclick='document.getElementById("hid").value="심심한";'>심심한</button>
 	<svg class="Area_bb">
 		<rect id="Area_bb" rx="4" ry="4" x="0" y="0" width="129" height="50">
 		</rect>
 	</svg>
-	<div id="Value_">
-		<span>칼칼한</span>
-	</div>
+	<button id="Value_" onclick='document.getElementById("hid").value="칼칼한";'>칼칼한</button>
 	<svg class="Area_bc">
 		<rect id="Area_bc" rx="4" ry="4" x="0" y="0" width="129" height="50">
 		</rect>
 	</svg>
-	<div id="Value_ba">
-		<span>기름진</span>
-	</div>
+	<button id="Value_ba" onclick='document.getElementById("hid").value="기름진";'>기름진</button>
 	<svg class="Area_bd">
 		<rect id="Area_bd" rx="4" ry="4" x="0" y="0" width="129" height="50">
 		</rect>
 	</svg>
-	<div id="Value_bb">
-		<span>아무거나</span>
-	</div>
+	<button id="Value_bb" onclick='document.getElementById("hid").value="아무거나";'>아무거나</button>
 	<svg class="Area_be">
 		<rect id="Area_be" rx="4" ry="4" x="0" y="0" width="129" height="50">
 		</rect>
 	</svg>
-	<div id="Value_bc">
-		<span>매콤한</span>
-	</div>
+	<button id="Value_bc" onclick='document.getElementById("hid").value="매콤한";'>매콤한</button>
 	<div id="n_143634">
 		<div id="n_4830">
 			<div id="n_368">

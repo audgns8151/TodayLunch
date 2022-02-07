@@ -1,22 +1,19 @@
-<%@page import="model.MemberDTO"%>
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>login</title>
+<title>Signuptest</title>
 <style id="applicationStylesheet" type="text/css">
 	.mediaViewInfo {
-		--web-view-name: login;
-		--web-view-id: login;
+		--web-view-name: Signuptest;
+		--web-view-id: Signuptest;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
 	:root {
-		--web-view-ids: login;
+		--web-view-ids: Signuptest;
 	}
 	* {
 		margin: 0;
@@ -24,542 +21,65 @@
 		box-sizing: border-box;
 		border: none;
 	}
-	#login {
+	#Signuptest {
 		position: absolute;
 		width: 1366px;
 		height: 1152px;
-		background-color: rgba(255,255,255,1);
+		background-color: rgba(251,251,251,1);
 		overflow: hidden;
-		--web-view-name: login;
-		--web-view-id: login;
+		--web-view-name: Signuptest;
+		--web-view-id: Signuptest;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
-	#n__29 {
+	#n_ {
 		position: absolute;
-		width: 771px;
-		height: 739px;
-		left: 595px;
-		top: 96px;
+		width: 1347px;
+		height: 758px;
+		left: 188px;
+		top: 107px;
 		overflow: visible;
 	}
-	#METADATA {
-		display: none;
-		left: 107px;
-		top: 454px;
+	#n_375 {
 		position: absolute;
-		overflow: hidden;
-		width: 11px;
-		height: 10px;
-		text-align: left;
-		font-family: Arial;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 3px;
-	}
-	#Icon {
-		position: absolute;
-		width: 18px;
-		height: 18px;
-		left: 514px;
-		top: 479px;
-		display: none;
+		width: 136px;
+		height: 94px;
+		left: 100px;
+		top: 686px;
 		overflow: visible;
 	}
-	#METADATA_s {
-		display: none;
-		left: 0px;
-		top: 0px;
+	#Label {
+		left: 70px;
+		top: 73px;
 		position: absolute;
-		overflow: hidden;
-		width: 11px;
-		height: 10px;
-		text-align: left;
-		font-family: Arial;
+		overflow: visible;
+		width: 67px;
+		white-space: nowrap;
+		line-height: 24px;
+		margin-top: -4px;
+		text-align: center;
+		font-family: Lato;
 		font-style: normal;
-		font-weight: normal;
-		font-size: 3px;
+		font-weight: bold;
+		font-size: 16px;
+		color: rgba(255,255,255,1);
+		letter-spacing: 0.24px;
 	}
 	#Area {
 		opacity: 0;
-		fill: rgba(255,240,240,1);
+		fill: rgba(252,252,252,1);
 	}
 	.Area {
 		position: absolute;
 		overflow: visible;
-		width: 18px;
-		height: 18px;
+		width: 20px;
+		height: 20px;
 		left: 0px;
 		top: 0px;
 	}
-	#Icon_u {
-		position: absolute;
-		width: 13.5px;
-		height: 13.5px;
-		left: 1.991px;
-		top: 2.25px;
-		overflow: visible;
-	}
-	#Path {
-		fill: rgba(0,0,0,0);
-		stroke: rgba(62,62,62,1);
-		stroke-width: 1.5px;
-		stroke-linejoin: round;
-		stroke-linecap: round;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
-	}
-	.Path {
-		position: absolute;
-		overflow: visible;
-		width: 13.5px;
-		height: 13.5px;
-		left: 0px;
-		top: 0px;
-	}
-	#Line {
-		fill: transparent;
-		stroke: rgba(62,62,62,1);
-		stroke-width: 1.5px;
-		stroke-linejoin: round;
-		stroke-linecap: round;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
-	}
-	.Line {
-		overflow: visible;
-		position: absolute;
-		width: 5.384px;
-		height: 5.384px;
-		left: 10.238px;
-		top: 10.237px;
-		transform: matrix(1,0,0,1,0,0);
-	}
-	#Label {
-		display: none;
-		left: 107px;
-		top: 437px;
-		position: absolute;
-		overflow: visible;
-		width: 38px;
-		white-space: nowrap;
-		line-height: 19px;
-		margin-top: -3px;
-		text-align: left;
-		font-family: Noto Sans;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 13px;
-		color: rgba(61,61,61,1);
-		letter-spacing: 0.4px;
-	}
-	#METADATA_y {
-		display: none;
-		left: 107px;
-		top: 572px;
-		position: absolute;
-		overflow: hidden;
-		width: 11px;
-		height: 10px;
-		text-align: left;
-		font-family: Arial;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 3px;
-	}
-	#Icon_z {
-		position: absolute;
-		width: 18px;
-		height: 18px;
-		left: 514px;
-		top: 597px;
-		display: none;
-		overflow: visible;
-	}
-	#METADATA_ {
-		display: none;
-		left: 0px;
-		top: 0px;
-		position: absolute;
-		overflow: hidden;
-		width: 11px;
-		height: 10px;
-		text-align: left;
-		font-family: Arial;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 3px;
-	}
-	#Area_ {
-		opacity: 0;
-		fill: rgba(255,240,240,1);
-	}
-	.Area_ {
-		position: absolute;
-		overflow: visible;
-		width: 18px;
-		height: 18px;
-		left: 0px;
-		top: 0px;
-	}
-	#Icon_ {
-		position: absolute;
-		width: 13.5px;
-		height: 13.5px;
-		left: 1.991px;
-		top: 2.25px;
-		overflow: visible;
-	}
-	#Path_ {
-		fill: rgba(0,0,0,0);
-		stroke: rgba(62,62,62,1);
-		stroke-width: 1.5px;
-		stroke-linejoin: round;
-		stroke-linecap: round;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
-	}
-	.Path_ {
-		position: absolute;
-		overflow: visible;
-		width: 13.5px;
-		height: 13.5px;
-		left: 0px;
-		top: 0px;
-	}
-	#Line_ {
-		fill: transparent;
-		stroke: rgba(62,62,62,1);
-		stroke-width: 1.5px;
-		stroke-linejoin: round;
-		stroke-linecap: round;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
-	}
-	.Line_ {
-		overflow: visible;
-		position: absolute;
-		width: 5.384px;
-		height: 5.384px;
-		left: 10.238px;
-		top: 10.237px;
-		transform: matrix(1,0,0,1,0,0);
-	}
-	#Label_ {
-		display: none;
-		left: 107px;
-		top: 555px;
-		position: absolute;
-		overflow: visible;
-		width: 38px;
-		white-space: nowrap;
-		line-height: 19px;
-		margin-top: -3px;
-		text-align: left;
-		font-family: Noto Sans;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 13px;
-		color: rgba(61,61,61,1);
-		letter-spacing: 0.4px;
-	}
-	#METADATA_cp {
-		display: none;
-		left: 393px;
-		top: 6px;
-		position: absolute;
-		overflow: hidden;
-		width: 11px;
-		height: 10px;
-		text-align: left;
-		font-family: Arial;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 3px;
-	}
-	#METADATA_bj {
-		display: none;
-		left: 585px;
-		top: 6px;
-		position: absolute;
-		overflow: hidden;
-		width: 11px;
-		height: 10px;
-		text-align: left;
-		font-family: Arial;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 3px;
-	}
-	#METADATA_bk {
-		display: none;
-		left: 525px;
-		top: 6px;
-		position: absolute;
-		overflow: hidden;
-		width: 11px;
-		height: 10px;
-		text-align: left;
-		font-family: Arial;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 3px;
-	}
-	#METADATA_cp {
-		display: none;
-		left: 393px;
-		top: 6px;
-		position: absolute;
-		overflow: hidden;
-		width: 11px;
-		height: 10px;
-		text-align: left;
-		font-family: Arial;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 3px;
-	}
-	#METADATA_ch {
-		display: none;
-		left: 567px;
-		top: 6px;
-		position: absolute;
-		overflow: hidden;
-		width: 11px;
-		height: 10px;
-		text-align: left;
-		font-family: Arial;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 3px;
-	}
-	#METADATA_bf {
-		display: none;
-		left: 759px;
-		top: 6px;
-		position: absolute;
-		overflow: hidden;
-		width: 11px;
-		height: 10px;
-		text-align: left;
-		font-family: Arial;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 3px;
-	}
-	#METADATA_bg {
-		display: none;
-		left: 699px;
-		top: 6px;
-		position: absolute;
-		overflow: hidden;
-		width: 11px;
-		height: 10px;
-		text-align: left;
-		font-family: Arial;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 3px;
-	}
-	#METADATA_bh {
-		display: none;
-		left: 565px;
-		top: 6px;
-		position: absolute;
-		overflow: hidden;
-		width: 11px;
-		height: 10px;
-		text-align: left;
-		font-family: Arial;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 3px;
-	}
-	#METADATA_cp {
-		display: none;
-		left: 393px;
-		top: 6px;
-		position: absolute;
-		overflow: hidden;
-		width: 11px;
-		height: 10px;
-		text-align: left;
-		font-family: Arial;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 3px;
-	}
-	#METADATA_bj {
-		display: none;
-		left: 585px;
-		top: 6px;
-		position: absolute;
-		overflow: hidden;
-		width: 11px;
-		height: 10px;
-		text-align: left;
-		font-family: Arial;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 3px;
-	}
-	#METADATA_bk {
-		display: none;
-		left: 525px;
-		top: 6px;
-		position: absolute;
-		overflow: hidden;
-		width: 11px;
-		height: 10px;
-		text-align: left;
-		font-family: Arial;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 3px;
-	}
-	#METADATA_cp {
-		display: none;
-		left: 393px;
-		top: 6px;
-		position: absolute;
-		overflow: hidden;
-		width: 11px;
-		height: 10px;
-		text-align: left;
-		font-family: Arial;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 3px;
-	}
-	#METADATA_cx {
-		display: none;
-		left: 750px;
-		top: 6px;
-		position: absolute;
-		overflow: hidden;
-		width: 11px;
-		height: 10px;
-		text-align: left;
-		font-family: Arial;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 3px;
-	}
-	#METADATA_bn {
-		display: none;
-		left: 942px;
-		top: 6px;
-		position: absolute;
-		overflow: hidden;
-		width: 11px;
-		height: 10px;
-		text-align: left;
-		font-family: Arial;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 3px;
-	}
-	#METADATA_bo {
-		display: none;
-		left: 933px;
-		top: 0px;
-		position: absolute;
-		overflow: hidden;
-		width: 11px;
-		height: 10px;
-		text-align: left;
-		font-family: Arial;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 3px;
-	}
-	#METADATA_bp {
-		display: none;
-		left: 882px;
-		top: 6px;
-		position: absolute;
-		overflow: hidden;
-		width: 11px;
-		height: 10px;
-		text-align: left;
-		font-family: Arial;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 3px;
-	}
-	#METADATA_cx {
-		display: none;
-		left: 750px;
-		top: 6px;
-		position: absolute;
-		overflow: hidden;
-		width: 11px;
-		height: 10px;
-		text-align: left;
-		font-family: Arial;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 3px;
-	}
-	#METADATA_da {
-		display: none;
-		left: 1152px;
-		top: 7px;
-		position: absolute;
-		overflow: hidden;
-		width: 11px;
-		height: 10px;
-		text-align: left;
-		font-family: Arial;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 3px;
-	}
-	#METADATA_bs {
-		display: none;
-		left: 1344px;
-		top: 7px;
-		position: absolute;
-		overflow: hidden;
-		width: 11px;
-		height: 10px;
-		text-align: left;
-		font-family: Arial;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 3px;
-	}
-	#METADATA_bt {
-		display: none;
-		left: 1284px;
-		top: 7px;
-		position: absolute;
-		overflow: hidden;
-		width: 11px;
-		height: 10px;
-		text-align: left;
-		font-family: Arial;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 3px;
-	}
-	#METADATA_da {
-		display: none;
-		left: 1152px;
-		top: 7px;
-		position: absolute;
-		overflow: hidden;
-		width: 11px;
-		height: 10px;
-		text-align: left;
-		font-family: Arial;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 3px;
-	}
-	#Welcome {
-		left: 25px;
-		top: 195px;
+	#Text {
+		left: 12px;
+		top: 207px;
 		position: absolute;
 		overflow: visible;
 		width: 587px;
@@ -570,709 +90,38 @@
 		font-weight: normal;
 		font-size: 60px;
 		color: rgba(64,51,50,1);
+		text-transform: capitalize;
 	}
-	#METADATA_bv {
-		display: none;
-		left: 97px;
-		top: 583px;
-		position: absolute;
-		overflow: hidden;
-		width: 11px;
-		height: 10px;
-		text-align: left;
-		font-family: Arial;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 3px;
-	}
-	#METADATA_bw {
-		display: none;
-		left: 272px;
-		top: 606px;
-		position: absolute;
-		overflow: hidden;
-		width: 11px;
-		height: 10px;
-		text-align: left;
-		font-family: Arial;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 3px;
-	}
-	#Area_bu {
-		opacity: 0;
+	#Area_t {
 		fill: rgba(255,255,255,1);
-	}
-	.Area_bu {
-		position: absolute;
-		overflow: visible;
-		width: 20px;
-		height: 20px;
-		left: 272px;
-		top: 606px;
-	}
-	#Button {
-		position: absolute;
-		width: 1px;
-		height: 1px;
-		left: -2984px;
-		top: 0px;
-		overflow: visible;
-	}
-	#METADATA_bx {
-		display: none;
-		left: 3071px;
-		top: 575px;
-		position: absolute;
-		overflow: hidden;
-		width: 11px;
-		height: 10px;
-		text-align: left;
-		font-family: Arial;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 3px;
-	}
-	#Icon_bx {
-		position: absolute;
-		width: 20px;
-		height: 20px;
-		left: 3246px;
-		top: 598px;
-		display: none;
-		overflow: visible;
-	}
-	#METADATA_by {
-		display: none;
-		left: 0px;
-		top: 0px;
-		position: absolute;
-		overflow: hidden;
-		width: 11px;
-		height: 10px;
-		text-align: left;
-		font-family: Arial;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 3px;
-	}
-	#Area_bz {
-		opacity: 0;
-		fill: rgba(255,255,255,1);
-	}
-	.Area_bz {
-		position: absolute;
-		overflow: visible;
-		width: 20px;
-		height: 20px;
-		left: 0px;
-		top: 0px;
-	}
-	#Icon_b {
-		position: absolute;
-		width: 17.42px;
-		height: 15.193px;
-		left: 1.291px;
-		top: 2.939px;
-		overflow: visible;
-	}
-	#Path_b {
-		fill: rgba(0,0,0,0);
-		stroke: rgba(255,255,255,1);
-		stroke-width: 1.6666666269302368px;
-		stroke-linejoin: round;
-		stroke-linecap: round;
+		stroke: rgba(212,212,213,1);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
 		stroke-miterlimit: 4;
 		shape-rendering: auto;
 	}
-	.Path_b {
+	.Area_t {
+		position: absolute;
 		overflow: visible;
-		position: absolute;
-		width: 19.086px;
-		height: 16.86px;
-		left: 0px;
-		top: 0px;
-		transform: matrix(1,0,0,1,0,0);
-	}
-	#METADATA_b {
-		display: none;
-		left: 100px;
-		top: 537px;
-		position: absolute;
-		overflow: hidden;
-		width: 11px;
-		height: 10px;
-		text-align: left;
-		font-family: Arial;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 3px;
-	}
-	#n_375 {
-		position: absolute;
-		width: 231px;
-		height: 96px;
+		width: 129px;
+		height: 50px;
 		left: 97px;
-		top: 533px;
-		overflow: visible;
-	}
-	#Area_b {
-		fill: rgba(242,89,127,1);
-	}
-	.Area_b {
-		overflow: visible;
-		position: absolute;
-		width: 163.894px;
-		height: 57.948px;
-		left: 0px;
-		top: 38.052px;
-		transform: matrix(1,0,0,1,0,0);
-	}
-	#Label_b {
-		left: 59px;
-		top: 58px;
-		position: absolute;
-		overflow: visible;
-		width: 47px;
-		white-space: nowrap;
-		line-height: 24px;
-		margin-top: -3px;
-		text-align: center;
-		font-family: ONE Mobile POP;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 18px;
-		color: rgba(255,255,255,1);
-		letter-spacing: 0.24px;
-	}
-	#Area_ca {
-		opacity: 0;
-		fill: rgba(252,252,252,1);
-	}
-	.Area_ca {
-		position: absolute;
-		overflow: visible;
-		width: 20px;
-		height: 20px;
-		left: 3px;
-		top: 0px;
-	}
-	#Path_ca {
-		fill: rgba(0,0,0,0);
-		stroke: rgba(61,61,61,1);
-		stroke-width: 1.6666666269302368px;
-		stroke-linejoin: round;
-		stroke-linecap: round;
-		stroke-miterlimit: 4;
-		shape-rendering: auto;
-	}
-	.Path_ca {
-		overflow: visible;
-		position: absolute;
-		width: 15.691px;
-		height: 11.179px;
-		left: 6.333px;
-		top: 5px;
-		transform: matrix(1,0,0,1,0,0);
+		top: 661px;
 	}
 	#Value {
-		left: 34px;
-		top: 2px;
+		left: 116px;
+		top: 676px;
 		position: absolute;
 		overflow: visible;
-		width: 198px;
+		width: 75px;
 		white-space: nowrap;
 		text-align: left;
 		font-family: IM_Hyemin;
 		font-style: normal;
 		font-weight: bold;
 		font-size: 16px;
-		color: rgba(61,61,61,1);
-	}
-	#METADATA_cp {
-		display: none;
-		left: 393px;
-		top: 6px;
-		position: absolute;
-		overflow: hidden;
-		width: 11px;
-		height: 10px;
-		text-align: left;
-		font-family: Arial;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 3px;
-	}
-	#PLACEHOLDER_Tab_Item_cq {
-		position: absolute;
-		width: 42px;
-		height: 42px;
-		left: 585px;
-		top: 6px;
-		display: none;
-		overflow: visible;
-	}
-	#METADATA_cr {
-		display: none;
-		left: 0px;
-		top: 0px;
-		position: absolute;
-		overflow: hidden;
-		width: 11px;
-		height: 10px;
-		text-align: left;
-		font-family: Arial;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 3px;
-	}
-	#Area_cs {
-		position: absolute;
-		width: 42px;
-		height: 42px;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-	}
-	#METADATA_ct {
-		display: none;
-		left: 0px;
-		top: 0px;
-		position: absolute;
-		overflow: hidden;
-		width: 11px;
-		height: 10px;
-		text-align: left;
-		font-family: Arial;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 3px;
-	}
-	#Placement_Area_cu {
-		opacity: 0;
-		fill: rgba(255,255,255,1);
-	}
-	.Placement_Area_cu {
-		position: absolute;
-		overflow: visible;
-		width: 42px;
-		height: 42px;
-		left: 0px;
-		top: 0px;
-	}
-	#Bar_cv {
-		opacity: 0;
-		fill: rgba(62,62,62,1);
-	}
-	.Bar_cv {
-		position: absolute;
-		overflow: visible;
-		width: 42px;
-		height: 2px;
-		left: 0px;
-		top: 40px;
-	}
-	#Label_cw {
-		left: 0px;
-		top: 10px;
-		position: absolute;
-		overflow: visible;
-		width: 43px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: Noto Sans;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 16px;
-		color: rgba(139,139,139,1);
-	}
-	#METADATA_ch {
-		display: none;
-		left: 567px;
-		top: 6px;
-		position: absolute;
-		overflow: hidden;
-		width: 11px;
-		height: 10px;
-		text-align: left;
-		font-family: Arial;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 3px;
-	}
-	#PLACEHOLDER_Tab_Item_ci {
-		position: absolute;
-		width: 42px;
-		height: 42px;
-		left: 759px;
-		top: 6px;
-		display: none;
-		overflow: visible;
-	}
-	#METADATA_cj {
-		display: none;
-		left: 0px;
-		top: 0px;
-		position: absolute;
-		overflow: hidden;
-		width: 11px;
-		height: 10px;
-		text-align: left;
-		font-family: Arial;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 3px;
-	}
-	#Area_ck {
-		position: absolute;
-		width: 42px;
-		height: 42px;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-	}
-	#METADATA_cl {
-		display: none;
-		left: 0px;
-		top: 0px;
-		position: absolute;
-		overflow: hidden;
-		width: 11px;
-		height: 10px;
-		text-align: left;
-		font-family: Arial;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 3px;
-	}
-	#Placement_Area_cm {
-		opacity: 0;
-		fill: rgba(255,255,255,1);
-	}
-	.Placement_Area_cm {
-		position: absolute;
-		overflow: visible;
-		width: 42px;
-		height: 42px;
-		left: 0px;
-		top: 0px;
-	}
-	#Bar_cn {
-		opacity: 0;
-		fill: rgba(62,62,62,1);
-	}
-	.Bar_cn {
-		position: absolute;
-		overflow: visible;
-		width: 42px;
-		height: 2px;
-		left: 0px;
-		top: 40px;
-	}
-	#Label_co {
-		left: 0px;
-		top: 10px;
-		position: absolute;
-		overflow: visible;
-		width: 43px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: Noto Sans;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 16px;
-		color: rgba(139,139,139,1);
-	}
-	#METADATA_cp {
-		display: none;
-		left: 393px;
-		top: 6px;
-		position: absolute;
-		overflow: hidden;
-		width: 11px;
-		height: 10px;
-		text-align: left;
-		font-family: Arial;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 3px;
-	}
-	#PLACEHOLDER_Tab_Item_cq {
-		position: absolute;
-		width: 42px;
-		height: 42px;
-		left: 585px;
-		top: 6px;
-		display: none;
-		overflow: visible;
-	}
-	#METADATA_cr {
-		display: none;
-		left: 0px;
-		top: 0px;
-		position: absolute;
-		overflow: hidden;
-		width: 11px;
-		height: 10px;
-		text-align: left;
-		font-family: Arial;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 3px;
-	}
-	#Area_cs {
-		position: absolute;
-		width: 42px;
-		height: 42px;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-	}
-	#METADATA_ct {
-		display: none;
-		left: 0px;
-		top: 0px;
-		position: absolute;
-		overflow: hidden;
-		width: 11px;
-		height: 10px;
-		text-align: left;
-		font-family: Arial;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 3px;
-	}
-	#Placement_Area_cu {
-		opacity: 0;
-		fill: rgba(255,255,255,1);
-	}
-	.Placement_Area_cu {
-		position: absolute;
-		overflow: visible;
-		width: 42px;
-		height: 42px;
-		left: 0px;
-		top: 0px;
-	}
-	#Bar_cv {
-		opacity: 0;
-		fill: rgba(62,62,62,1);
-	}
-	.Bar_cv {
-		position: absolute;
-		overflow: visible;
-		width: 42px;
-		height: 2px;
-		left: 0px;
-		top: 40px;
-	}
-	#Label_cw {
-		left: 0px;
-		top: 10px;
-		position: absolute;
-		overflow: visible;
-		width: 43px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: Noto Sans;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 16px;
-		color: rgba(139,139,139,1);
-	}
-	#METADATA_cx {
-		display: none;
-		left: 750px;
-		top: 6px;
-		position: absolute;
-		overflow: hidden;
-		width: 11px;
-		height: 10px;
-		text-align: left;
-		font-family: Arial;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 3px;
-	}
-	#PLACEHOLDER_Tab_Item_cy {
-		position: absolute;
-		width: 42px;
-		height: 42px;
-		left: 942px;
-		top: 6px;
-		display: none;
-		overflow: visible;
-	}
-	#METADATA_ff {
-		display: none;
-		left: 0px;
-		top: 0px;
-		position: absolute;
-		overflow: hidden;
-		width: 11px;
-		height: 10px;
-		text-align: left;
-		font-family: Arial;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 3px;
-	}
-	#Area_fg {
-		position: absolute;
-		width: 42px;
-		height: 42px;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-	}
-	#METADATA_fh {
-		display: none;
-		left: 0px;
-		top: 0px;
-		position: absolute;
-		overflow: hidden;
-		width: 11px;
-		height: 10px;
-		text-align: left;
-		font-family: Arial;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 3px;
-	}
-	#Placement_Area_fi {
-		opacity: 0;
-		fill: rgba(255,255,255,1);
-	}
-	.Placement_Area_fi {
-		position: absolute;
-		overflow: visible;
-		width: 42px;
-		height: 42px;
-		left: 0px;
-		top: 0px;
-	}
-	#Bar_fj {
-		opacity: 0;
-		fill: rgba(62,62,62,1);
-	}
-	.Bar_fj {
-		position: absolute;
-		overflow: visible;
-		width: 42px;
-		height: 2px;
-		left: 0px;
-		top: 40px;
-	}
-	#Label_fk {
-		left: 0px;
-		top: 10px;
-		position: absolute;
-		overflow: visible;
-		width: 43px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: Noto Sans;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 16px;
-		color: rgba(139,139,139,1);
-	}
-	#METADATA_da {
-		display: none;
-		left: 1152px;
-		top: 7px;
-		position: absolute;
-		overflow: hidden;
-		width: 11px;
-		height: 10px;
-		text-align: left;
-		font-family: Arial;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 3px;
-	}
-	#PLACEHOLDER_Tab_Item_c {
-		position: absolute;
-		width: 42px;
-		height: 42px;
-		left: 1344px;
-		top: 7px;
-		display: none;
-		overflow: visible;
-	}
-	#METADATA_fw {
-		display: none;
-		left: 0px;
-		top: 0px;
-		position: absolute;
-		overflow: hidden;
-		width: 11px;
-		height: 10px;
-		text-align: left;
-		font-family: Arial;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 3px;
-	}
-	#Area_fx {
-		position: absolute;
-		width: 42px;
-		height: 42px;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-	}
-	#METADATA_fy {
-		display: none;
-		left: 0px;
-		top: 0px;
-		position: absolute;
-		overflow: hidden;
-		width: 11px;
-		height: 10px;
-		text-align: left;
-		font-family: Arial;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 3px;
-	}
-	#Placement_Area_fz {
-		opacity: 0;
-		fill: rgba(255,255,255,1);
-	}
-	.Placement_Area_fz {
-		position: absolute;
-		overflow: visible;
-		width: 42px;
-		height: 42px;
-		left: 0px;
-		top: 0px;
-	}
-	#Bar_f {
-		opacity: 0;
-		fill: rgba(62,62,62,1);
-	}
-	.Bar_f {
-		position: absolute;
-		overflow: visible;
-		width: 42px;
-		height: 2px;
-		left: 0px;
-		top: 40px;
-	}
-	#Label_f {
-		left: 0px;
-		top: 10px;
-		position: absolute;
-		overflow: visible;
-		width: 43px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: Noto Sans;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 16px;
-		color: rgba(139,139,139,1);
+		color: rgba(112,112,112,1);
 	}
 	#Email {
 		position: absolute;
@@ -1304,7 +153,7 @@
 		top: 0px;
 		position: absolute;
 		overflow: visible;
-		width: 43px;
+		width: 50px;
 		white-space: nowrap;
 		text-align: left;
 		font-family: IM_Hyemin;
@@ -1313,6 +162,23 @@
 		font-size: 16px;
 		color: rgba(85,85,88,1);
 		letter-spacing: 0.07px;
+	}
+	#n__y {
+		left: 48px;
+		top: 41px;
+		position: absolute;
+		overflow: visible;
+		width: 386px;
+		height: 20px;
+		line-height: 24px;
+		margin-top: -4px;
+		text-align: left;
+		font-family: IM_Hyemin;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		color: rgba(112,112,112,1);
+		letter-spacing: 0.03px;
 	}
 	#icon {
 		position: absolute;
@@ -1357,23 +223,6 @@
 		top: 0px;
 		transform: matrix(1,0,0,1,0,0);
 	}
-	#n_ {
-		left: 48px;
-		top: 41px;
-		position: absolute;
-		overflow: visible;
-		width: 386px;
-		height: 20px;
-		line-height: 24px;
-		margin-top: -4px;
-		text-align: left;
-		font-family: IM_Hyemin;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 16px;
-		color: rgba(112,112,112,1);
-		letter-spacing: 0.03px;
-	}
 	#Password {
 		position: absolute;
 		width: 441px;
@@ -1382,7 +231,7 @@
 		top: 432px;
 		overflow: visible;
 	}
-	#n_50_dl {
+	#n_50_ {
 		fill: rgba(255,255,255,1);
 		stroke: rgba(212,212,213,1);
 		stroke-width: 1.5px;
@@ -1391,7 +240,7 @@
 		stroke-miterlimit: 4;
 		shape-rendering: auto;
 	}
-	.n_50_dl {
+	.n_50_ {
 		position: absolute;
 		overflow: visible;
 		width: 441px;
@@ -1399,12 +248,12 @@
 		left: 0px;
 		top: 24px;
 	}
-	#Password__ {
+	#Password_ {
 		left: 0px;
 		top: 0px;
 		position: absolute;
 		overflow: visible;
-		width: 75px;
+		width: 82px;
 		white-space: nowrap;
 		text-align: left;
 		font-family: IM_Hyemin;
@@ -1434,7 +283,7 @@
 		top: 0px;
 		transform: matrix(1,0,0,1,0,0);
 	}
-	#n__dp {
+	#n__ {
 		left: 48px;
 		top: 41px;
 		position: absolute;
@@ -1451,75 +300,219 @@
 		color: rgba(112,112,112,1);
 		letter-spacing: 0.03px;
 	}
-	#n_143620 {
+	#Full_Name {
 		position: absolute;
-		width: 2058.708px;
-		height: 757.355px;
-		left: -423.708px;
-		top: 735px;
+		width: 441px;
+		height: 73px;
+		left: 97px;
+		top: 536px;
 		overflow: visible;
 	}
-	#n_4691 {
-		fill: rgba(255,228,149,1);
+	#n_50_ba {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(212,212,213,1);
+		stroke-width: 1.5px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
 	}
-	.n_4691 {
+	.n_50_ba {
+		position: absolute;
 		overflow: visible;
-		position: absolute;
-		width: 888px;
-		height: 598.355px;
-		left: 1170.708px;
-		top: 159px;
-		transform: matrix(1,0,0,1,0,0);
+		width: 441px;
+		height: 50px;
+		left: 0px;
+		top: 23px;
 	}
-	#n_4829 {
-		position: absolute;
-		width: 961.708px;
-		height: 748.211px;
+	#Nick_Name {
 		left: 0px;
 		top: 0px;
-		overflow: visible;
-	}
-	#n_4609 {
-		fill: rgba(239,187,197,1);
-	}
-	.n_4609 {
-		overflow: visible;
-		position: absolute;
-		width: 961.708px;
-		height: 748.211px;
-		left: 0px;
-		top: 0px;
-		transform: matrix(1,0,0,1,0,0);
-	}
-	#fleet {
-		left: 1019.708px;
-		top: 265.159px;
 		position: absolute;
 		overflow: visible;
-		width: 227px;
+		width: 77px;
 		white-space: nowrap;
-		text-align: center;
+		text-align: left;
 		font-family: IM_Hyemin;
 		font-style: normal;
 		font-weight: bold;
-		font-size: 31px;
-		color: rgba(0,0,0,1);
+		font-size: 16px;
+		color: rgba(85,85,88,1);
+		letter-spacing: 0.07px;
 	}
-	#Copyright__2021_UI8_LLC_All_ri {
-		left: 1014.708px;
-		top: 321.105px;
+	#n__bb {
+		left: 48px;
+		top: 40px;
 		position: absolute;
 		overflow: visible;
-		width: 235px;
-		white-space: nowrap;
-		line-height: 25px;
-		margin-top: -3.5px;
-		text-align: center;
+		width: 382px;
+		height: 20px;
+		line-height: 24px;
+		margin-top: -4px;
+		text-align: left;
 		font-family: IM_Hyemin;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		color: rgba(112,112,112,1);
+		letter-spacing: 0.03px;
+	}
+	#icon_bc {
+		position: absolute;
+		width: 15px;
+		height: 18.383px;
+		left: 18px;
+		top: 38px;
+		overflow: visible;
+	}
+	#n_7 {
+		fill: rgba(0,0,0,0);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1.5px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n_7 {
+		position: absolute;
+		overflow: visible;
+		width: 10.5px;
+		height: 10.5px;
+		left: 3px;
+		top: 0px;
+	}
+	#n_51 {
+		fill: rgba(0,0,0,0);
+		stroke: rgba(112,112,112,1);
+		stroke-width: 1.5px;
+		stroke-linejoin: round;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.n_51 {
+		overflow: visible;
+		position: absolute;
+		width: 16.5px;
+		height: 9px;
+		left: 0px;
+		top: 10.883px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Location {
+		left: 97px;
+		top: 638px;
+		position: absolute;
+		overflow: visible;
+		width: 66px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: IM_Hyemin;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		color: rgba(85,85,88,1);
+		letter-spacing: 0.07px;
+	}
+	#Area_bg {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(212,212,213,1);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Area_bg {
+		position: absolute;
+		overflow: visible;
+		width: 129px;
+		height: 50px;
+		left: 253px;
+		top: 661px;
+	}
+	#Value_bh {
+		left: 269px;
+		top: 676px;
+		position: absolute;
+		overflow: visible;
+		width: 46px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: IM_Hyemin;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		color: rgba(112,112,112,1);
+	}
+	#Area_bi {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(212,212,213,1);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Area_bi {
+		position: absolute;
+		overflow: visible;
+		width: 129px;
+		height: 50px;
+		left: 409px;
+		top: 661px;
+	}
+	#Value_bj {
+		left: 425px;
+		top: 676px;
+		position: absolute;
+		overflow: visible;
+		width: 46px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: IM_Hyemin;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		color: rgba(112,112,112,1);
+	}
+	#n_375_bk {
+		position: absolute;
+		width: 163.894px;
+		height: 57.014px;
+		left: 97px;
+		top: 744.052px;
+		overflow: visible;
+	}
+	#Area_bl {
+		fill: rgba(242,89,127,1);
+	}
+	.Area_bl {
+		overflow: visible;
+		position: absolute;
+		width: 163.894px;
+		height: 57.014px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Label_bm {
+		left: 49px;
+		top: 19.459px;
+		position: absolute;
+		overflow: visible;
+		width: 67px;
+		white-space: nowrap;
+		line-height: 24px;
+		margin-top: -3px;
+		text-align: center;
+		font-family: ONE Mobile POP;
 		font-style: normal;
 		font-weight: normal;
 		font-size: 18px;
-		color: rgba(0,0,0,1);
+		color: rgba(255,255,255,1);
+		letter-spacing: 0.24px;
 	}
 	#n_143634 {
 		position: absolute;
@@ -1559,13 +552,13 @@
 	}
 	#Tabs {
 		position: absolute;
-		width: 1320px;
+		width: 1324px;
 		height: 53px;
 		left: 24px;
 		top: 0px;
 		overflow: visible;
 	}
-	#METADATA_ef {
+	#METADATA_cb {
 		display: none;
 		left: 357px;
 		top: 0px;
@@ -1579,7 +572,7 @@
 		font-weight: normal;
 		font-size: 3px;
 	}
-	#PLACEHOLDER_Tab_Item_d {
+	#PLACEHOLDER_Tab_Item {
 		position: absolute;
 		width: 42px;
 		height: 53px;
@@ -1588,7 +581,7 @@
 		display: none;
 		overflow: visible;
 	}
-	#METADATA_ea {
+	#METADATA_bu {
 		display: none;
 		left: 0px;
 		top: 0px;
@@ -1602,7 +595,7 @@
 		font-weight: normal;
 		font-size: 3px;
 	}
-	#Area_d {
+	#Area_bv {
 		position: absolute;
 		width: 42px;
 		height: 53px;
@@ -1610,7 +603,7 @@
 		top: 0px;
 		overflow: visible;
 	}
-	#METADATA_eb {
+	#METADATA_bw {
 		display: none;
 		left: 0px;
 		top: 0px;
@@ -1624,11 +617,11 @@
 		font-weight: normal;
 		font-size: 3px;
 	}
-	#Placement_Area_d {
+	#Placement_Area {
 		opacity: 0;
 		fill: rgba(255,255,255,1);
 	}
-	.Placement_Area_d {
+	.Placement_Area {
 		position: absolute;
 		overflow: visible;
 		width: 42px;
@@ -1636,11 +629,11 @@
 		left: 0px;
 		top: 0px;
 	}
-	#Bar_d {
+	#Bar {
 		opacity: 0;
 		fill: rgba(62,62,62,1);
 	}
-	.Bar_d {
+	.Bar {
 		position: absolute;
 		overflow: visible;
 		width: 42px;
@@ -1648,7 +641,7 @@
 		left: 0px;
 		top: 51px;
 	}
-	#Label_d {
+	#Label_bz {
 		left: 0px;
 		top: 16px;
 		position: absolute;
@@ -1670,7 +663,7 @@
 		top: 0px;
 		overflow: visible;
 	}
-	#METADATA_ec {
+	#METADATA_b {
 		display: none;
 		left: 0px;
 		top: 0px;
@@ -1684,7 +677,7 @@
 		font-weight: normal;
 		font-size: 3px;
 	}
-	#Area_eb {
+	#Area_b {
 		position: absolute;
 		width: 42px;
 		height: 53px;
@@ -1692,7 +685,7 @@
 		top: 0px;
 		overflow: visible;
 	}
-	#METADATA_ed {
+	#METADATA_ca {
 		display: none;
 		left: 0px;
 		top: 0px;
@@ -1706,11 +699,11 @@
 		font-weight: normal;
 		font-size: 3px;
 	}
-	#Placement_Area_ed {
+	#Placement_Area_b {
 		opacity: 0;
 		fill: rgba(255,255,255,1);
 	}
-	.Placement_Area_ed {
+	.Placement_Area_b {
 		position: absolute;
 		overflow: visible;
 		width: 42px;
@@ -1718,11 +711,11 @@
 		left: 0px;
 		top: 0px;
 	}
-	#Bar_ee {
+	#Bar_b {
 		opacity: 0;
 		fill: rgba(62,62,62,1);
 	}
-	.Bar_ee {
+	.Bar_b {
 		position: absolute;
 		overflow: visible;
 		width: 42px;
@@ -1730,7 +723,7 @@
 		left: 0px;
 		top: 51px;
 	}
-	#METADATA_ef {
+	#METADATA_cb {
 		display: none;
 		left: 357px;
 		top: 0px;
@@ -1744,7 +737,7 @@
 		font-weight: normal;
 		font-size: 3px;
 	}
-	#Area_eg {
+	#Area_ca {
 		position: absolute;
 		width: 42px;
 		height: 53px;
@@ -1752,7 +745,7 @@
 		top: 0px;
 		overflow: visible;
 	}
-	#METADATA_eh {
+	#METADATA_cc {
 		display: none;
 		left: 0px;
 		top: 0px;
@@ -1780,119 +773,119 @@
 	}
 	#n_143633 {
 		position: absolute;
-		width: 1320px;
+		width: 1324px;
 		height: 20px;
 		left: 0px;
 		top: 17px;
 		overflow: visible;
 	}
-	#Label_ek {
+	#Label_cb {
 		left: 0px;
 		top: 0px;
 		position: absolute;
 		overflow: visible;
-		width: 363px;
+		width: 355px;
 		white-space: nowrap;
 		text-align: left;
-		font-family: IM_Hyemin;
+		font-family: ONE Mobile POP;
 		font-style: normal;
-		font-weight: bold;
-		font-size: 16px;
+		font-weight: normal;
+		font-size: 18px;
 		color: rgba(64,51,50,1);
 	}
-	#Label_el {
+	#Label_cc {
 		left: 350px;
 		top: 0px;
 		position: absolute;
 		overflow: visible;
-		width: 84px;
+		width: 88px;
 		white-space: nowrap;
 		text-align: left;
-		font-family: IM_Hyemin;
+		font-family: ONE Mobile POP OTF;
 		font-style: normal;
-		font-weight: bold;
-		font-size: 16px;
+		font-weight: normal;
+		font-size: 18px;
 		color: rgba(64,51,50,1);
 	}
-	#Label_em {
+	#Label_cd {
 		left: 516px;
-		top: 0px;
+		top: 1px;
 		position: absolute;
 		overflow: visible;
-		width: 99px;
+		width: 103px;
 		white-space: nowrap;
 		text-align: left;
-		font-family: IM_Hyemin;
+		font-family: ONE Mobile POP;
 		font-style: normal;
-		font-weight: bold;
-		font-size: 16px;
+		font-weight: normal;
+		font-size: 18px;
 		color: rgba(64,51,50,1);
 	}
-	#Label_en {
+	#Label_ce {
 		left: 696px;
 		top: 0px;
 		position: absolute;
 		overflow: visible;
-		width: 113px;
+		width: 116px;
 		white-space: nowrap;
 		text-align: left;
-		font-family: IM_Hyemin;
+		font-family: ONE Mobile POP;
 		font-style: normal;
-		font-weight: bold;
-		font-size: 16px;
+		font-weight: normal;
+		font-size: 18px;
 		color: rgba(64,51,50,1);
 	}
-	#Label_eo {
+	#Label_cf {
 		left: 891px;
 		top: 0px;
 		position: absolute;
 		overflow: visible;
-		width: 99px;
+		width: 104px;
 		white-space: nowrap;
 		text-align: left;
-		font-family: IM_Hyemin;
+		font-family: ONE Mobile POP;
 		font-style: normal;
-		font-weight: bold;
-		font-size: 16px;
+		font-weight: normal;
+		font-size: 18px;
 		color: rgba(64,51,50,1);
 	}
-	#Label_ep {
+	#Label_cg {
 		left: 1186px;
 		top: 0px;
 		position: absolute;
 		overflow: visible;
-		width: 45px;
+		width: 46px;
 		white-space: nowrap;
 		text-align: left;
-		font-family: IM_Hyemin;
+		font-family: ONE Mobile POP;
 		font-style: normal;
-		font-weight: bold;
-		font-size: 16px;
+		font-weight: normal;
+		font-size: 18px;
 		color: rgba(64,51,50,1);
 	}
-	#Label_eq {
+	#Label_ch {
 		left: 1260px;
 		top: 0px;
 		position: absolute;
 		overflow: visible;
-		width: 61px;
+		width: 65px;
 		white-space: nowrap;
 		text-align: left;
-		font-family: IM_Hyemin;
+		font-family: ONE Mobile POP;
 		font-style: normal;
-		font-weight: bold;
-		font-size: 16px;
+		font-weight: normal;
+		font-size: 18px;
 		color: rgba(64,51,50,1);
 	}
-	#Tabs_er {
+	#Tabs_ci {
 		position: absolute;
 		width: 176px;
 		height: 42px;
-		left: 564px;
+		left: 555px;
 		top: 11px;
 		overflow: visible;
 	}
-	#METADATA_es {
+	#METADATA_cj {
 		display: none;
 		left: 2px;
 		top: 0px;
@@ -1906,7 +899,7 @@
 		font-weight: normal;
 		font-size: 3px;
 	}
-	#PLACEHOLDER_Tab_Item_et {
+	#PLACEHOLDER_Tab_Item_ck {
 		position: absolute;
 		width: 42px;
 		height: 42px;
@@ -1915,7 +908,7 @@
 		display: none;
 		overflow: visible;
 	}
-	#METADATA_eu {
+	#METADATA_cl {
 		display: none;
 		left: 0px;
 		top: 0px;
@@ -1929,7 +922,7 @@
 		font-weight: normal;
 		font-size: 3px;
 	}
-	#Area_ev {
+	#Area_cm {
 		position: absolute;
 		width: 42px;
 		height: 42px;
@@ -1937,7 +930,7 @@
 		top: 0px;
 		overflow: visible;
 	}
-	#METADATA_ew {
+	#METADATA_cn {
 		display: none;
 		left: 0px;
 		top: 0px;
@@ -1951,11 +944,11 @@
 		font-weight: normal;
 		font-size: 3px;
 	}
-	#Placement_Area_ex {
+	#Placement_Area_co {
 		opacity: 0;
 		fill: rgba(255,255,255,1);
 	}
-	.Placement_Area_ex {
+	.Placement_Area_co {
 		position: absolute;
 		overflow: visible;
 		width: 42px;
@@ -1963,11 +956,11 @@
 		left: 0px;
 		top: 0px;
 	}
-	#Bar_ey {
+	#Bar_cp {
 		opacity: 0;
 		fill: rgba(62,62,62,1);
 	}
-	.Bar_ey {
+	.Bar_cp {
 		position: absolute;
 		overflow: visible;
 		width: 42px;
@@ -1975,7 +968,7 @@
 		left: 0px;
 		top: 40px;
 	}
-	#Label_ez {
+	#Label_cq {
 		left: 0px;
 		top: 10px;
 		position: absolute;
@@ -1989,7 +982,7 @@
 		font-size: 16px;
 		color: rgba(139,139,139,1);
 	}
-	#Tab_Item_e {
+	#Tab_Item_cr {
 		position: absolute;
 		width: 42px;
 		height: 42px;
@@ -1997,7 +990,7 @@
 		top: 0px;
 		overflow: visible;
 	}
-	#METADATA_e {
+	#METADATA_cs {
 		display: none;
 		left: 0px;
 		top: 0px;
@@ -2011,7 +1004,7 @@
 		font-weight: normal;
 		font-size: 3px;
 	}
-	#Area_e {
+	#Area_ct {
 		position: absolute;
 		width: 42px;
 		height: 42px;
@@ -2019,7 +1012,7 @@
 		top: 0px;
 		overflow: visible;
 	}
-	#METADATA_fa {
+	#METADATA_cu {
 		display: none;
 		left: 0px;
 		top: 0px;
@@ -2033,11 +1026,11 @@
 		font-weight: normal;
 		font-size: 3px;
 	}
-	#Placement_Area_e {
+	#Placement_Area_cv {
 		opacity: 0;
 		fill: rgba(255,255,255,1);
 	}
-	.Placement_Area_e {
+	.Placement_Area_cv {
 		position: absolute;
 		overflow: visible;
 		width: 42px;
@@ -2045,11 +1038,11 @@
 		left: 0px;
 		top: 0px;
 	}
-	#Bar_e {
+	#Bar_cw {
 		opacity: 0;
 		fill: rgba(62,62,62,1);
 	}
-	.Bar_e {
+	.Bar_cw {
 		position: absolute;
 		overflow: visible;
 		width: 42px;
@@ -2057,7 +1050,7 @@
 		left: 0px;
 		top: 40px;
 	}
-	#Tab_Item_fa {
+	#Tab_Item_cx {
 		position: absolute;
 		width: 125px;
 		height: 42px;
@@ -2065,7 +1058,7 @@
 		top: 0px;
 		overflow: visible;
 	}
-	#METADATA_fb {
+	#METADATA_cy {
 		display: none;
 		left: 0px;
 		top: 0px;
@@ -2079,7 +1072,7 @@
 		font-weight: normal;
 		font-size: 3px;
 	}
-	#Area_fa {
+	#Area_cz {
 		position: absolute;
 		width: 125px;
 		height: 42px;
@@ -2087,7 +1080,7 @@
 		top: 0px;
 		overflow: visible;
 	}
-	#METADATA_fc {
+	#METADATA_c {
 		display: none;
 		left: 0px;
 		top: 0px;
@@ -2101,11 +1094,11 @@
 		font-weight: normal;
 		font-size: 3px;
 	}
-	#Placement_Area_STATEACTIVE_fa {
+	#Placement_Area_STATEACTIVE_c {
 		opacity: 0;
 		fill: rgba(255,255,255,1);
 	}
-	.Placement_Area_STATEACTIVE_fa {
+	.Placement_Area_STATEACTIVE_c {
 		position: absolute;
 		overflow: visible;
 		width: 42px;
@@ -2124,7 +1117,7 @@
 		transform: translate(0px, 0px) matrix(1,0,0,1,110.5,20.5) rotate(90deg);
 		transform-origin: center;
 	}
-	#Tabs_fc {
+	#Tabs_c {
 		position: absolute;
 		width: 42px;
 		height: 42px;
@@ -2132,7 +1125,7 @@
 		top: 6px;
 		overflow: visible;
 	}
-	#METADATA_fd {
+	#METADATA_da {
 		display: none;
 		left: -132px;
 		top: 0px;
@@ -2146,7 +1139,7 @@
 		font-weight: normal;
 		font-size: 3px;
 	}
-	#PLACEHOLDER_Tab_Item_fe {
+	#PLACEHOLDER_Tab_Item_c {
 		position: absolute;
 		width: 42px;
 		height: 42px;
@@ -2155,7 +1148,7 @@
 		display: none;
 		overflow: visible;
 	}
-	#METADATA_ff {
+	#METADATA_db {
 		display: none;
 		left: 0px;
 		top: 0px;
@@ -2169,7 +1162,7 @@
 		font-weight: normal;
 		font-size: 3px;
 	}
-	#Area_fg {
+	#Area_c {
 		position: absolute;
 		width: 42px;
 		height: 42px;
@@ -2177,7 +1170,7 @@
 		top: 0px;
 		overflow: visible;
 	}
-	#METADATA_fh {
+	#METADATA_dc {
 		display: none;
 		left: 0px;
 		top: 0px;
@@ -2191,11 +1184,11 @@
 		font-weight: normal;
 		font-size: 3px;
 	}
-	#Placement_Area_fi {
+	#Placement_Area_c {
 		opacity: 0;
 		fill: rgba(255,255,255,1);
 	}
-	.Placement_Area_fi {
+	.Placement_Area_c {
 		position: absolute;
 		overflow: visible;
 		width: 42px;
@@ -2203,11 +1196,11 @@
 		left: 0px;
 		top: 0px;
 	}
-	#Bar_fj {
+	#Bar_da {
 		opacity: 0;
 		fill: rgba(62,62,62,1);
 	}
-	.Bar_fj {
+	.Bar_da {
 		position: absolute;
 		overflow: visible;
 		width: 42px;
@@ -2215,7 +1208,7 @@
 		left: 0px;
 		top: 40px;
 	}
-	#Label_fk {
+	#Label_db {
 		left: 0px;
 		top: 10px;
 		position: absolute;
@@ -2229,7 +1222,7 @@
 		font-size: 16px;
 		color: rgba(139,139,139,1);
 	}
-	#Tab_Item_fl {
+	#Tab_Item_dc {
 		position: absolute;
 		width: 42px;
 		height: 42px;
@@ -2237,7 +1230,7 @@
 		top: 0px;
 		overflow: visible;
 	}
-	#METADATA_fm {
+	#METADATA_dd {
 		display: none;
 		left: 0px;
 		top: 0px;
@@ -2251,7 +1244,7 @@
 		font-weight: normal;
 		font-size: 3px;
 	}
-	#Area_fn {
+	#Area_de {
 		position: absolute;
 		width: 42px;
 		height: 42px;
@@ -2259,7 +1252,7 @@
 		top: 0px;
 		overflow: visible;
 	}
-	#METADATA_fo {
+	#METADATA_df {
 		display: none;
 		left: 0px;
 		top: 0px;
@@ -2273,11 +1266,11 @@
 		font-weight: normal;
 		font-size: 3px;
 	}
-	#Placement_Area_fp {
+	#Placement_Area_dg {
 		opacity: 0;
 		fill: rgba(255,255,255,1);
 	}
-	.Placement_Area_fp {
+	.Placement_Area_dg {
 		position: absolute;
 		overflow: visible;
 		width: 42px;
@@ -2285,11 +1278,11 @@
 		left: 0px;
 		top: 0px;
 	}
-	#Bar_fq {
+	#Bar_dh {
 		opacity: 0;
 		fill: rgba(62,62,62,1);
 	}
-	.Bar_fq {
+	.Bar_dh {
 		position: absolute;
 		overflow: visible;
 		width: 42px;
@@ -2297,10 +1290,10 @@
 		left: 0px;
 		top: 40px;
 	}
-	#Bar_STATEACTIVE_fr {
+	#Bar_STATEACTIVE_di {
 		fill: rgba(255,255,255,1);
 	}
-	.Bar_STATEACTIVE_fr {
+	.Bar_STATEACTIVE_di {
 		width: 27px;
 		height: 2px;
 		position: absolute;
@@ -2308,10 +1301,10 @@
 		transform: translate(0px, 0px) matrix(1,0,0,1,479.5,26.5) rotate(90deg);
 		transform-origin: center;
 	}
-	#Bar_STATEACTIVE_fs {
+	#Bar_STATEACTIVE_dj {
 		fill: rgba(255,255,255,1);
 	}
-	.Bar_STATEACTIVE_fs {
+	.Bar_STATEACTIVE_dj {
 		width: 27px;
 		height: 2px;
 		position: absolute;
@@ -2319,7 +1312,7 @@
 		transform: translate(0px, 0px) matrix(1,0,0,1,865.5,26.5) rotate(90deg);
 		transform-origin: center;
 	}
-	#Tabs_ft {
+	#Tabs_dk {
 		position: absolute;
 		width: 174px;
 		height: 42px;
@@ -2327,7 +1320,7 @@
 		top: 7px;
 		overflow: visible;
 	}
-	#METADATA_fu {
+	#METADATA_dl {
 		display: none;
 		left: 0px;
 		top: 0px;
@@ -2341,7 +1334,7 @@
 		font-weight: normal;
 		font-size: 3px;
 	}
-	#PLACEHOLDER_Tab_Item_fv {
+	#PLACEHOLDER_Tab_Item_dm {
 		position: absolute;
 		width: 42px;
 		height: 42px;
@@ -2350,7 +1343,7 @@
 		display: none;
 		overflow: visible;
 	}
-	#METADATA_fw {
+	#METADATA_dn {
 		display: none;
 		left: 0px;
 		top: 0px;
@@ -2364,7 +1357,7 @@
 		font-weight: normal;
 		font-size: 3px;
 	}
-	#Area_fx {
+	#Area_do {
 		position: absolute;
 		width: 42px;
 		height: 42px;
@@ -2372,7 +1365,7 @@
 		top: 0px;
 		overflow: visible;
 	}
-	#METADATA_fy {
+	#METADATA_dp {
 		display: none;
 		left: 0px;
 		top: 0px;
@@ -2386,11 +1379,11 @@
 		font-weight: normal;
 		font-size: 3px;
 	}
-	#Placement_Area_fz {
+	#Placement_Area_dq {
 		opacity: 0;
 		fill: rgba(255,255,255,1);
 	}
-	.Placement_Area_fz {
+	.Placement_Area_dq {
 		position: absolute;
 		overflow: visible;
 		width: 42px;
@@ -2398,11 +1391,11 @@
 		left: 0px;
 		top: 0px;
 	}
-	#Bar_f {
+	#Bar_dr {
 		opacity: 0;
 		fill: rgba(62,62,62,1);
 	}
-	.Bar_f {
+	.Bar_dr {
 		position: absolute;
 		overflow: visible;
 		width: 42px;
@@ -2410,7 +1403,7 @@
 		left: 0px;
 		top: 40px;
 	}
-	#Label_f {
+	#Label_ds {
 		left: 0px;
 		top: 10px;
 		position: absolute;
@@ -2424,7 +1417,7 @@
 		font-size: 16px;
 		color: rgba(139,139,139,1);
 	}
-	#Tab_Item_f {
+	#Tab_Item_dt {
 		position: absolute;
 		width: 42px;
 		height: 42px;
@@ -2432,7 +1425,7 @@
 		top: 0px;
 		overflow: visible;
 	}
-	#METADATA_f {
+	#METADATA_du {
 		display: none;
 		left: 0px;
 		top: 0px;
@@ -2446,7 +1439,7 @@
 		font-weight: normal;
 		font-size: 3px;
 	}
-	#Area_f {
+	#Area_dv {
 		position: absolute;
 		width: 42px;
 		height: 42px;
@@ -2454,7 +1447,7 @@
 		top: 0px;
 		overflow: visible;
 	}
-	#METADATA_ga {
+	#METADATA_dw {
 		display: none;
 		left: 0px;
 		top: 0px;
@@ -2468,11 +1461,11 @@
 		font-weight: normal;
 		font-size: 3px;
 	}
-	#Placement_Area_f {
+	#Placement_Area_dx {
 		opacity: 0;
 		fill: rgba(255,255,255,1);
 	}
-	.Placement_Area_f {
+	.Placement_Area_dx {
 		position: absolute;
 		overflow: visible;
 		width: 42px;
@@ -2480,11 +1473,11 @@
 		left: 0px;
 		top: 0px;
 	}
-	#Bar_ga {
+	#Bar_dy {
 		opacity: 0;
 		fill: rgba(62,62,62,1);
 	}
-	.Bar_ga {
+	.Bar_dy {
 		position: absolute;
 		overflow: visible;
 		width: 42px;
@@ -2492,7 +1485,7 @@
 		left: 0px;
 		top: 40px;
 	}
-	#Tab_Item_ga {
+	#Tab_Item_dz {
 		position: absolute;
 		width: 42px;
 		height: 42px;
@@ -2500,7 +1493,7 @@
 		top: 0px;
 		overflow: visible;
 	}
-	#METADATA_gb {
+	#METADATA_d {
 		display: none;
 		left: 0px;
 		top: 0px;
@@ -2514,7 +1507,7 @@
 		font-weight: normal;
 		font-size: 3px;
 	}
-	#Area_ga {
+	#Area_d {
 		position: absolute;
 		width: 42px;
 		height: 42px;
@@ -2522,7 +1515,7 @@
 		top: 0px;
 		overflow: visible;
 	}
-	#METADATA_gc {
+	#METADATA_ea {
 		display: none;
 		left: 0px;
 		top: 0px;
@@ -2536,11 +1529,11 @@
 		font-weight: normal;
 		font-size: 3px;
 	}
-	#Placement_Area_STATEACTIVE_gc {
+	#Placement_Area_STATEACTIVE_d {
 		opacity: 0;
 		fill: rgba(255,255,255,1);
 	}
-	.Placement_Area_STATEACTIVE_gc {
+	.Placement_Area_STATEACTIVE_d {
 		position: absolute;
 		overflow: visible;
 		width: 42px;
@@ -5015,7 +4008,7 @@ var Application = function() {
 			}
 			// if target view is on bottom
 			// then show target view instantly 
-			// and fade out current view
+			// and fadeÂ out current view
 			else if (fromIndex>toIndex) {
 				self.setElementAnimation(to, null);
 				self.setElementAnimation(from, null);
@@ -5461,305 +4454,27 @@ window.application = new Application();
 </script>
 </head>
 <body>
-<form id = "Login" action = "LoginService" method="post" >
-<div id="login">
-<%if(request.getParameter("check")!=null && request.getParameter("check").equals("fail")){%>
-<script>alert("로그인 실패!");</script>
-<%}%>
-<%if(request.getParameter("check")!=null && request.getParameter("check").equals("success")){%>
-<script>alert("회원가입 성공!");</script>
-<%}%>
-	<img id="n__29" src="n__29.png" srcset="n__29.png 1x, n__29@2x.png 2x">
+<div id="Signuptest">
+	<img id="n_" src="n_.png" srcset="n_.png 1x, n_@2x.png 2x">
 		
-	</svg>
-	<div id="METADATA">
-		<span>{"config":{},"type":"Input","nodeName":"Input","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-28T02:39:04.642Z"}</span>
-	</div>
-	<div id="Icon">
-		<div id="METADATA_s">
-			<span>{"config":{"ICON":"Feather/Search"},"type":"Icon","nodeName":"Icon","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-28T02:39:04.628Z"}</span>
+	<div id="n_375">
+		<div id="Label">
+			<span>가입하기</span>
 		</div>
 		<svg class="Area">
-			<rect id="Area" rx="0" ry="0" x="0" y="0" width="18" height="18">
+			<rect id="Area" rx="0" ry="0" x="0" y="0" width="20" height="20">
 			</rect>
 		</svg>
-		<div id="Icon_u">
-			<svg class="Path">
-				<ellipse id="Path" rx="6" ry="6" cx="6" cy="6">
-				</ellipse>
-			</svg>
-			<svg class="Line" viewBox="0 0 3.262 3.262">
-				<path id="Line" d="M 3.262499809265137 3.262499809265137 L 0 0">
-				</path>
-			</svg>
-		</div>
 	</div>
-	<div id="Label">
-		<span>Label</span>
+	<div id="Text">
+		<span>회원가입</span>
 	</div>
-	<div id="METADATA_y">
-		<span>{"config":{},"type":"Input","nodeName":"Input","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-28T02:39:04.642Z"}</span>
-	</div>
-	<div id="Icon_z">
-		<div id="METADATA_">
-			<span>{"config":{"ICON":"Feather/Search"},"type":"Icon","nodeName":"Icon","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-28T02:39:04.628Z"}</span>
-		</div>
-		<svg class="Area_">
-			<rect id="Area_" rx="0" ry="0" x="0" y="0" width="18" height="18">
-			</rect>
-		</svg>
-		<div id="Icon_">
-			<svg class="Path_">
-				<ellipse id="Path_" rx="6" ry="6" cx="6" cy="6">
-				</ellipse>
-			</svg>
-			<svg class="Line_" viewBox="0 0 3.262 3.262">
-				<path id="Line_" d="M 3.262499809265137 3.262499809265137 L 0 0">
-				</path>
-			</svg>
-		</div>
-	</div>
-	<div id="Label_">
-		<span>Label</span>
-	</div>
-	<div id="METADATA_cp">
-		<span>{"config":{},"type":"Tabs","theme":"Base","nodeName":"Tabs","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.162Z"}</span>
-	</div>
-	<div id="METADATA_bj">
-		<span>{"config":{},"type":"Group","theme":"Base","nodeName":"[PLACEHOLDER] Tab Item","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.138Z"}</span>
-	</div>
-	<div id="METADATA_bk">
-		<span>{"config":{},"type":"TabItem","theme":"Base","nodeName":"Tab Item","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.146Z"}</span>
-	</div>
-	<div id="METADATA_cp">
-		<span>{"config":{},"type":"Tabs","theme":"Base","nodeName":"Tabs","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.162Z"}</span>
-	</div>
-	<div id="METADATA_ch">
-		<span>{"config":{},"type":"Tabs","theme":"Base","nodeName":"Tabs","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.162Z"}</span>
-	</div>
-	<div id="METADATA_bf">
-		<span>{"config":{},"type":"Group","theme":"Base","nodeName":"[PLACEHOLDER] Tab Item","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.138Z"}</span>
-	</div>
-	<div id="METADATA_bg">
-		<span>{"config":{},"type":"TabItem","theme":"Base","nodeName":"Tab Item","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.146Z"}</span>
-	</div>
-	<div id="METADATA_bh">
-		<span>{"config":{"STATE":"ACTIVE"},"type":"TabItem","theme":"Base","nodeName":"Tab Item","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.159Z"}</span>
-	</div>
-	<div id="METADATA_cp">
-		<span>{"config":{},"type":"Tabs","theme":"Base","nodeName":"Tabs","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.162Z"}</span>
-	</div>
-	<div id="METADATA_bj">
-		<span>{"config":{},"type":"Group","theme":"Base","nodeName":"[PLACEHOLDER] Tab Item","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.138Z"}</span>
-	</div>
-	<div id="METADATA_bk">
-		<span>{"config":{},"type":"TabItem","theme":"Base","nodeName":"Tab Item","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.146Z"}</span>
-	</div>
-	<div id="METADATA_cp">
-		<span>{"config":{},"type":"Tabs","theme":"Base","nodeName":"Tabs","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.162Z"}</span>
-	</div>
-	<div id="METADATA_cx">
-		<span>{"config":{},"type":"Tabs","theme":"Base","nodeName":"Tabs","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.162Z"}</span>
-	</div>
-	<div id="METADATA_bn">
-		<span>{"config":{},"type":"Group","theme":"Base","nodeName":"[PLACEHOLDER] Tab Item","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.138Z"}</span>
-	</div>
-	<div id="METADATA_bo">
-		<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Area","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.136Z"}</span>
-	</div>
-	<div id="METADATA_bp">
-		<span>{"config":{},"type":"TabItem","theme":"Base","nodeName":"Tab Item","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.146Z"}</span>
-	</div>
-	<div id="METADATA_cx">
-		<span>{"config":{},"type":"Tabs","theme":"Base","nodeName":"Tabs","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.162Z"}</span>
-	</div>
-	<div id="METADATA_da">
-		<span>{"config":{},"type":"Tabs","theme":"Base","nodeName":"Tabs","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.162Z"}</span>
-	</div>
-	<div id="METADATA_bs">
-		<span>{"config":{},"type":"Group","theme":"Base","nodeName":"[PLACEHOLDER] Tab Item","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.138Z"}</span>
-	</div>
-	<div id="METADATA_bt">
-		<span>{"config":{},"type":"TabItem","theme":"Base","nodeName":"Tab Item","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.146Z"}</span>
-	</div>
-	<div id="METADATA_da">
-		<span>{"config":{},"type":"Tabs","theme":"Base","nodeName":"Tabs","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.162Z"}</span>
-	</div>
-	<div id="Welcome">
-		<span>Welcome</span>
-	</div>
-	<div id="METADATA_bv">
-		<span>{"config":{},"type":"Button","nodeName":"Button","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-28T03:19:23.218Z"}</span>
-	</div>
-	<div id="METADATA_bw">
-		<span>{"config":{},"type":"Icon","nodeName":"Icon","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-28T03:19:23.005Z"}</span>
-	</div>
-	<svg class="Area_bu">
-		<rect id="Area_bu" rx="0" ry="0" x="0" y="0" width="20" height="20">
+	<svg class="Area_u">
+		<rect id="Area_u" rx="4" ry="4" x="0" y="0" width="129" height="50">
 		</rect>
 	</svg>
-	<div id="Button">
-		<div id="METADATA_bx">
-			<span>{"config":{},"type":"Button","nodeName":"Button","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-28T03:19:23.218Z"}</span>
-		</div>
-		<div id="Icon_bx">
-			<div id="METADATA_by">
-				<span>{"config":{},"type":"Icon","nodeName":"Icon","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-28T03:19:23.005Z"}</span>
-			</div>
-			<svg class="Area_bz">
-				<rect id="Area_bz" rx="0" ry="0" x="0" y="0" width="20" height="20">
-				</rect>
-			</svg>
-			<div id="Icon_b">
-				<svg class="Path_b" viewBox="1.29 2.499 17.42 15.193">
-					<path id="Path_b" d="M 17.36700057983398 3.842000007629395 C 15.57699966430664 2.051000118255615 12.67300033569336 2.051000118255615 10.88300037384033 3.842000007629395 L 10 4.724999904632568 L 9.116999626159668 3.842000007629395 C 7.326000213623047 2.051000118255615 4.423999786376953 2.051000118255615 2.632999897003174 3.842000007629395 C 0.8429999947547913 5.631999969482422 0.8429999947547913 8.534999847412109 2.632999897003174 10.32499980926514 L 3.516999959945679 11.20800018310547 L 10 17.6919994354248 L 16.48299980163574 11.20800018310547 L 17.36700057983398 10.32499980926514 C 19.15800094604492 8.534999847412109 19.15800094604492 5.631999969482422 17.36700057983398 3.842000007629395 Z">
-					</path>
-				</svg>
-			</div>
-		</div>
-	</div>
-	<div id="METADATA_b">
-		<span>{"config":{"ICON":"feather/check"},"type":"Icon","nodeName":"Icon","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-28T03:25:14.171Z"}</span>
-	</div>
-	<div id="n_375">
-		<svg class="Area_b" viewBox="0 0 163.894 57.948">
-			<path id="Area_b" d="M 18.64197540283203 0 L 145.2520599365234 0 C 155.5477447509766 0 163.89404296875 9.293522834777832 163.89404296875 20.75766563415527 L 163.89404296875 37.19081878662109 C 163.89404296875 40.67591857910156 163.1227111816406 43.96041870117188 161.6560821533203 47.06048202514648 C 158.6393432617188 53.44655609130859 152.4178619384766 57.948486328125 145.2520599365234 57.948486328125 L 18.64197540283203 57.948486328125 C 8.346296310424805 57.948486328125 0 48.65496444702148 0 37.19081878662109 L 0 20.75766563415527 C 0 9.293522834777832 8.346296310424805 0 18.64197540283203 0 Z">
-			</path>
-		</svg>
-		<div id="Label_b">
-			<span onclick="document.getElementById('Login').submit();">로그인</span>
-		</div>
-		<svg class="Area_ca">
-			<rect id="Area_ca" rx="0" ry="0" x="0" y="0" width="20" height="20">
-			</rect>
-		</svg>
-		<svg class="Path_ca" viewBox="3.333 5 13.334 9.167">
-			<path id="Path_ca" d="M 16.66699981689453 5 L 7.5 14.16699981689453 L 3.33299994468689 10">
-			</path>
-		</svg>
-		<div id="Value" onclick="location.href='SignUp.jsp';">
-			<span>회원가입을 아직 안하셨나요?</span>
-		</div>
-	</div>
-	<div id="METADATA_cp">
-		<span>{"config":{},"type":"Tabs","theme":"Base","nodeName":"Tabs","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.162Z"}</span>
-	</div>
-	<div id="PLACEHOLDER_Tab_Item_cq">
-		<div id="METADATA_cr">
-			<span>{"config":{},"type":"Group","theme":"Base","nodeName":"[PLACEHOLDER] Tab Item","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.138Z"}</span>
-		</div>
-		<div id="Area_cs">
-			<div id="METADATA_ct">
-				<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Area","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.136Z"}</span>
-			</div>
-			<svg class="Placement_Area_cu">
-				<rect id="Placement_Area_cu" rx="0" ry="0" x="0" y="0" width="42" height="42">
-				</rect>
-			</svg>
-			<svg class="Bar_cv">
-				<rect id="Bar_cv" rx="1" ry="1" x="0" y="0" width="42" height="2">
-				</rect>
-			</svg>
-		</div>
-		<div id="Label_cw">
-			<span>Label</span>
-		</div>
-	</div>
-	<div id="METADATA_ch">
-		<span>{"config":{},"type":"Tabs","theme":"Base","nodeName":"Tabs","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.162Z"}</span>
-	</div>
-	<div id="PLACEHOLDER_Tab_Item_ci">
-		<div id="METADATA_cj">
-			<span>{"config":{},"type":"Group","theme":"Base","nodeName":"[PLACEHOLDER] Tab Item","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.138Z"}</span>
-		</div>
-		<div id="Area_ck">
-			<div id="METADATA_cl">
-				<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Area","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.136Z"}</span>
-			</div>
-			<svg class="Placement_Area_cm">
-				<rect id="Placement_Area_cm" rx="0" ry="0" x="0" y="0" width="42" height="42">
-				</rect>
-			</svg>
-			<svg class="Bar_cn">
-				<rect id="Bar_cn" rx="1" ry="1" x="0" y="0" width="42" height="2">
-				</rect>
-			</svg>
-		</div>
-		<div id="Label_co">
-			<span>Label</span>
-		</div>
-	</div>
-	<div id="METADATA_cp">
-		<span>{"config":{},"type":"Tabs","theme":"Base","nodeName":"Tabs","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.162Z"}</span>
-	</div>
-	<div id="PLACEHOLDER_Tab_Item_cq">
-		<div id="METADATA_cr">
-			<span>{"config":{},"type":"Group","theme":"Base","nodeName":"[PLACEHOLDER] Tab Item","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.138Z"}</span>
-		</div>
-		<div id="Area_cs">
-			<div id="METADATA_ct">
-				<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Area","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.136Z"}</span>
-			</div>
-			<svg class="Placement_Area_cu">
-				<rect id="Placement_Area_cu" rx="0" ry="0" x="0" y="0" width="42" height="42">
-				</rect>
-			</svg>
-			<svg class="Bar_cv">
-				<rect id="Bar_cv" rx="1" ry="1" x="0" y="0" width="42" height="2">
-				</rect>
-			</svg>
-		</div>
-		<div id="Label_cw">
-			<span>Label</span>
-		</div>
-	</div>
-	<div id="METADATA_cx">
-		<span>{"config":{},"type":"Tabs","theme":"Base","nodeName":"Tabs","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.162Z"}</span>
-	</div>
-	<div id="PLACEHOLDER_Tab_Item_cy">
-						<div id="METADATA_ff">
-							<span>{"config":{},"type":"Group","theme":"Base","nodeName":"[PLACEHOLDER] Tab Item","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.138Z"}</span>
-						</div>
-						<div id="Area_fg">
-							<div id="METADATA_fh">
-								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Area","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.136Z"}</span>
-							</div>
-							<svg class="Placement_Area_fi">
-								<rect id="Placement_Area_fi" rx="0" ry="0" x="0" y="0" width="42" height="42">
-								</rect>
-							</svg>
-							<svg class="Bar_fj">
-								<rect id="Bar_fj" rx="1" ry="1" x="0" y="0" width="42" height="2">
-								</rect>
-							</svg>
-						</div>
-						<div id="Label_fk">
-							<span>Label</span>
-						</div>
-	</div>
-	<div id="METADATA_da">
-		<span>{"config":{},"type":"Tabs","theme":"Base","nodeName":"Tabs","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.162Z"}</span>
-	</div>
-	<div id="PLACEHOLDER_Tab_Item_c">
-						<div id="METADATA_fw">
-							<span>{"config":{},"type":"Group","theme":"Base","nodeName":"[PLACEHOLDER] Tab Item","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.138Z"}</span>
-						</div>
-						<div id="Area_fx">
-							<div id="METADATA_fy">
-								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Area","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.136Z"}</span>
-							</div>
-							<svg class="Placement_Area_fz">
-								<rect id="Placement_Area_fz" rx="0" ry="0" x="0" y="0" width="42" height="42">
-								</rect>
-							</svg>
-							<svg class="Bar_f">
-								<rect id="Bar_f" rx="1" ry="1" x="0" y="0" width="42" height="2">
-								</rect>
-							</svg>
-						</div>
-						<div id="Label_f">
-							<span>Label</span>
-						</div>
+	<div id="Value">
+		<span>광주광역시</span>
 	</div>
 	<div id="Email">
 		<svg class="n_50">
@@ -5767,7 +4482,10 @@ window.application = new Application();
 			</rect>
 		</svg>
 		<div id="Email__">
-			<span>Email</span><span style="color:rgba(78,111,252,1);"> </span><span style="color:rgba(242,89,127,1);"></span><br/>
+			<span>Email</span><span style="color:rgba(78,111,252,1);"> </span><span style="color:rgba(242,89,127,1);">*</span><br/>
+		</div>
+		<div id="n__z">
+			<input type = "text" name = "email" placeholder="이메일을 입력해주세요">
 		</div>
 		<div id="icon">
 			<svg class="n_52">
@@ -5779,17 +4497,14 @@ window.application = new Application();
 				</path>
 			</svg>
 		</div>
-		<div id="n_">
-			<input type = "text" name ="email" placeholder="이메일을 입력해주세요">
-		</div>
 	</div>
 	<div id="Password">
-		<svg class="n_50_dl">
-			<rect id="n_50_dl" rx="4" ry="4" x="0" y="0" width="441" height="50">
+		<svg class="n_50_">
+			<rect id="n_50_" rx="4" ry="4" x="0" y="0" width="441" height="50">
 			</rect>
 		</svg>
-		<div id="Password__">
-			<span>Password </span><br/>
+		<div id="Password_">
+			<span>Password </span><span style="color:rgba(242,89,127,1);">*</span>
 		</div>
 		<div id="lock">
 			<svg class="Combined-Shape" viewBox="2 1 20 22">
@@ -5797,8 +4512,66 @@ window.application = new Application();
 				</path>
 			</svg>
 		</div>
-		<div id="n__dp">
-			<input type="password" name = "pw" placeholder="비밀번호를 입력해주세요">
+		<div id="n__">
+			<input type="password" name="pw" placeholder="비밀번호를 입력해주세요">
+		</div>
+	</div>
+	<div id="Full_Name">
+		<svg class="n_50_ba">
+			<rect id="n_50_ba" rx="4" ry="4" x="0" y="0" width="441" height="50">
+			</rect>
+		</svg>
+		<div id="Nick_Name">
+			<span>Nick Name</span>
+		</div>
+		<div id="n__bc">
+			<input type="text" name="nickname" placeholder="닉네임을 입력해주세요">
+		</div>
+		<div id="icon_bd">
+			<svg class="n_7">
+				<ellipse id="n_7" rx="4.5" ry="4.5" cx="4.5" cy="4.5">
+				</ellipse>
+			</svg>
+			<svg class="n_51" viewBox="180.96 419.565 15 7.5">
+				<path id="n_51" d="M 180.9600067138672 427.0650024414062 C 180.9600067138672 422.9230041503906 184.3179931640625 419.5650024414062 188.4600067138672 419.5650024414062 C 192.6029968261719 419.5650024414062 195.9600067138672 422.9230041503906 195.9600067138672 427.0650024414062 L 180.9600067138672 427.0650024414062 Z">
+				</path>
+			</svg>
+		</div>
+	</div>
+	<div id="Location">
+		<span>Location</span>
+	</div>
+	<svg class="Area_bh">
+		<rect id="Area_bh" rx="4" ry="4" x="0" y="0" width="129" height="50">
+		</rect>
+	</svg>
+	<div id="Value_bi">
+		<select name="goo">
+		<option value = "동구">동구</option>
+		<option value = "서구">서구</option>
+		<option value = "남구">남구</option>
+		<option value = "북구">북구</option>
+		<option value = "광산구">광산구</option>
+		</select>
+		
+	</div>
+	<svg class="Area_bj">
+		<rect id="Area_bj" rx="4" ry="4" x="0" y="0" width="129" height="50">
+		</rect>
+	</svg>
+	<div id="Value_bk">
+		<select name="dong">
+		<option value = "동명동">동명동</option>
+		<option value = "충장동">충장동</option>
+		</select>
+	</div>
+	<div id="n_375_bl" style="z-index:99">
+		<svg class="Area_bm" viewBox="0 0 163.894 57.014">
+			<path id="Area_bm" d="M 18.64197540283203 0 L 145.2520599365234 0 C 155.5477447509766 0 163.89404296875 9.143679618835449 163.89404296875 20.42298126220703 L 163.89404296875 36.5911750793457 C 163.89404296875 40.02008438110352 163.1227111816406 43.25162506103516 161.6560821533203 46.30170822143555 C 158.6393432617188 52.58481597900391 152.4178619384766 57.01416015625 145.2520599365234 57.01416015625 L 18.64197540283203 57.01416015625 C 8.346296310424805 57.01416015625 0 47.87047958374023 0 36.5911750793457 L 0 20.42298126220703 C 0 9.143679618835449 8.346296310424805 0 18.64197540283203 0 Z">
+			</path>
+		</svg>
+		<div id="Label_bn">
+			<span onclick="document.getElementById('SignUp').submit();">회원가입</span>
 		</div>
 	</div>
 	<div id="n_143620">
@@ -5827,53 +4600,53 @@ window.application = new Application();
 					</rect>
 				</svg>
 				<div id="Tabs">
-					<div id="METADATA_ef">
+					<div id="METADATA_cd">
 						<span>{"config":{"STATE":"ACTIVE"},"type":"TabItem","theme":"Base","nodeName":"Tab Item","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.159Z"}</span>
 					</div>
-					<div id="PLACEHOLDER_Tab_Item_d">
-						<div id="METADATA_ea">
+					<div id="PLACEHOLDER_Tab_Item">
+						<div id="METADATA_b">
 							<span>{"config":{},"type":"Group","theme":"Base","nodeName":"[PLACEHOLDER] Tab Item","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.138Z"}</span>
 						</div>
-						<div id="Area_d">
-							<div id="METADATA_eb">
+						<div id="Area_b">
+							<div id="METADATA_ca">
 								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Area","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.136Z"}</span>
 							</div>
-							<svg class="Placement_Area_d">
-								<rect id="Placement_Area_d" rx="0" ry="0" x="0" y="0" width="42" height="53">
+							<svg class="Placement_Area">
+								<rect id="Placement_Area" rx="0" ry="0" x="0" y="0" width="42" height="53">
 								</rect>
 							</svg>
-							<svg class="Bar_d">
-								<rect id="Bar_d" rx="1" ry="1" x="0" y="0" width="42" height="2">
+							<svg class="Bar">
+								<rect id="Bar" rx="1" ry="1" x="0" y="0" width="42" height="2">
 								</rect>
 							</svg>
 						</div>
-						<div id="Label_d">
+						<div id="Label_b">
 							<span>Label</span>
 						</div>
 					</div>
 					<div id="Tab_Item">
-						<div id="METADATA_ec">
+						<div id="METADATA_cb">
 							<span>{"config":{},"type":"TabItem","theme":"Base","nodeName":"Tab Item","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.146Z"}</span>
 						</div>
-						<div id="Area_eb">
-							<div id="METADATA_ed">
+						<div id="Area_ca">
+							<div id="METADATA_cc">
 								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Area","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.140Z"}</span>
 							</div>
-							<svg class="Placement_Area_ed">
-								<rect id="Placement_Area_ed" rx="0" ry="0" x="0" y="0" width="42" height="53">
+							<svg class="Placement_Area_cb">
+								<rect id="Placement_Area_cb" rx="0" ry="0" x="0" y="0" width="42" height="53">
 								</rect>
 							</svg>
-							<svg class="Bar_ee">
-								<rect id="Bar_ee" rx="1" ry="1" x="0" y="0" width="42" height="2">
+							<svg class="Bar_cc">
+								<rect id="Bar_cc" rx="1" ry="1" x="0" y="0" width="42" height="2">
 								</rect>
 							</svg>
 						</div>
 					</div>
-					<div id="METADATA_ef">
+					<div id="METADATA_cd">
 						<span>{"config":{"STATE":"ACTIVE"},"type":"TabItem","theme":"Base","nodeName":"Tab Item","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.159Z"}</span>
 					</div>
-					<div id="Area_eg">
-						<div id="METADATA_eh">
+					<div id="Area_ce">
+						<div id="METADATA_cf">
 							<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Area","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.155Z"}</span>
 						</div>
 						<svg class="Placement_Area_STATEACTIVE">
@@ -5882,82 +4655,82 @@ window.application = new Application();
 						</svg>
 					</div>
 					<div id="n_143633">
-						<div id="Label_ek">
+						<div id="Label_ci">
 							<span> 오점 : 오늘의 점심                                                         </span>
 						</div>
-						<div id="Label_el">
+						<div id="Label_cj">
 							<span> 돌림판 게임</span>
 						</div>
-						<div id="Label_em">
+						<div id="Label_ck">
 							<span> 이상형 월드컵</span>
 						</div>
-						<div id="Label_en">
+						<div id="Label_cl">
 							<span>맞춤 추천 서비스</span>
 						</div>
-						<div id="Label_eo">
+						<div id="Label_cm">
 							<span>인근 맛집 탐방</span>
 						</div>
-						<div id="Label_ep">
+						<div id="Label_cn">
 							<span>로그인</span>
 						</div>
-						<div id="Label_eq">
+						<div id="Label_co">
 							<span>회원가입</span>
 						</div>
 					</div>
 				</div>
-				<div id="Tabs_er">
-					<div id="METADATA_es">
+				<div id="Tabs_cp">
+					<div id="METADATA_cq">
 						<span>{"config":{},"type":"Tabs","theme":"Base","nodeName":"Tabs","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.162Z"}</span>
 					</div>
-					<div id="PLACEHOLDER_Tab_Item_et">
-						<div id="METADATA_eu">
+					<div id="PLACEHOLDER_Tab_Item_cr">
+						<div id="METADATA_cs">
 							<span>{"config":{},"type":"Group","theme":"Base","nodeName":"[PLACEHOLDER] Tab Item","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.138Z"}</span>
 						</div>
-						<div id="Area_ev">
-							<div id="METADATA_ew">
+						<div id="Area_ct">
+							<div id="METADATA_cu">
 								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Area","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.136Z"}</span>
 							</div>
-							<svg class="Placement_Area_ex">
-								<rect id="Placement_Area_ex" rx="0" ry="0" x="0" y="0" width="42" height="42">
+							<svg class="Placement_Area_cv">
+								<rect id="Placement_Area_cv" rx="0" ry="0" x="0" y="0" width="42" height="42">
 								</rect>
 							</svg>
-							<svg class="Bar_ey">
-								<rect id="Bar_ey" rx="1" ry="1" x="0" y="0" width="42" height="2">
+							<svg class="Bar_cw">
+								<rect id="Bar_cw" rx="1" ry="1" x="0" y="0" width="42" height="2">
 								</rect>
 							</svg>
 						</div>
-						<div id="Label_ez">
+						<div id="Label_cx">
 							<span>Label</span>
 						</div>
 					</div>
-					<div id="Tab_Item_e">
-						<div id="METADATA_e">
+					<div id="Tab_Item_cy">
+						<div id="METADATA_cz">
 							<span>{"config":{},"type":"TabItem","theme":"Base","nodeName":"Tab Item","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.146Z"}</span>
 						</div>
-						<div id="Area_e">
-							<div id="METADATA_fa">
+						<div id="Area_c">
+							<div id="METADATA_c">
 								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Area","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.140Z"}</span>
 							</div>
-							<svg class="Placement_Area_e">
-								<rect id="Placement_Area_e" rx="0" ry="0" x="0" y="0" width="42" height="42">
+							<svg class="Placement_Area_c">
+								<rect id="Placement_Area_c" rx="0" ry="0" x="0" y="0" width="42" height="42">
 								</rect>
 							</svg>
-							<svg class="Bar_e">
-								<rect id="Bar_e" rx="1" ry="1" x="0" y="0" width="42" height="2">
+							<svg class="Bar_c">
+								<rect id="Bar_c" rx="1" ry="1" x="0" y="0" width="42" height="2">
 								</rect>
 							</svg>
 						</div>
 					</div>
-					<div id="Tab_Item_fa">
-						<div id="METADATA_fb">
+					<div id="Tab_Item_c">
+						<div id="METADATA_da">
 							<span>{"config":{"STATE":"ACTIVE"},"type":"TabItem","theme":"Base","nodeName":"Tab Item","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.159Z"}</span>
 						</div>
-						<div id="Area_fa">
-							<div id="METADATA_fc">
+						<div id="Area_da">
+							<div id="METADATA_db">
 								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Area","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.155Z"}</span>
 							</div>
-							<svg class="Placement_Area_STATEACTIVE_fa">
-								<rect id="Placement_Area_STATEACTIVE_fa" rx="0" ry="0" x="0" y="0" width="42" height="42">
+							<svg class="Placement_Area_STATEACTIVE_c">
+								<rect id="Placement_Area_STATEACTIVE_c" rx="0" ry="0" x="0" y="0" width="42" height="42">
 								</rect>
 							</svg>
 							<svg class="Bar_STATEACTIVE">
@@ -5967,111 +4740,111 @@ window.application = new Application();
 						</div>
 					</div>
 				</div>
-				<div id="Tabs_fc">
-					<div id="METADATA_fd">
+				<div id="Tabs_da">
+					<div id="METADATA_dc">
 						<span>{"config":{},"type":"Tabs","theme":"Base","nodeName":"Tabs","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.162Z"}</span>
 					</div>
-					<div id="PLACEHOLDER_Tab_Item_fe">
-						<div id="METADATA_ff">
+					<div id="PLACEHOLDER_Tab_Item_dc">
+						<div id="METADATA_dd">
 							<span>{"config":{},"type":"Group","theme":"Base","nodeName":"[PLACEHOLDER] Tab Item","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.138Z"}</span>
 						</div>
-						<div id="Area_fg">
-							<div id="METADATA_fh">
+						<div id="Area_de">
+							<div id="METADATA_df">
 								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Area","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.136Z"}</span>
 							</div>
-							<svg class="Placement_Area_fi">
-								<rect id="Placement_Area_fi" rx="0" ry="0" x="0" y="0" width="42" height="42">
+							<svg class="Placement_Area_dg">
+								<rect id="Placement_Area_dg" rx="0" ry="0" x="0" y="0" width="42" height="42">
 								</rect>
 							</svg>
-							<svg class="Bar_fj">
-								<rect id="Bar_fj" rx="1" ry="1" x="0" y="0" width="42" height="2">
+							<svg class="Bar_dh">
+								<rect id="Bar_dh" rx="1" ry="1" x="0" y="0" width="42" height="2">
 								</rect>
 							</svg>
 						</div>
-						<div id="Label_fk">
+						<div id="Label_di">
 							<span>Label</span>
 						</div>
 					</div>
-					<div id="Tab_Item_fl">
-						<div id="METADATA_fm">
+					<div id="Tab_Item_dj">
+						<div id="METADATA_dk">
 							<span>{"config":{},"type":"TabItem","theme":"Base","nodeName":"Tab Item","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.146Z"}</span>
 						</div>
-						<div id="Area_fn">
-							<div id="METADATA_fo">
+						<div id="Area_dl">
+							<div id="METADATA_dm">
 								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Area","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.140Z"}</span>
 							</div>
-							<svg class="Placement_Area_fp">
-								<rect id="Placement_Area_fp" rx="0" ry="0" x="0" y="0" width="42" height="42">
+							<svg class="Placement_Area_dn">
+								<rect id="Placement_Area_dn" rx="0" ry="0" x="0" y="0" width="42" height="42">
 								</rect>
 							</svg>
-							<svg class="Bar_fq">
-								<rect id="Bar_fq" rx="1" ry="1" x="0" y="0" width="42" height="2">
+							<svg class="Bar_do">
+								<rect id="Bar_do" rx="1" ry="1" x="0" y="0" width="42" height="2">
 								</rect>
 							</svg>
 						</div>
 					</div>
 				</div>
-				<svg class="Bar_STATEACTIVE_fr">
-					<rect id="Bar_STATEACTIVE_fr" rx="1" ry="1" x="0" y="0" width="27" height="2">
+				<svg class="Bar_STATEACTIVE_dp">
+					<rect id="Bar_STATEACTIVE_dp" rx="1" ry="1" x="0" y="0" width="27" height="2">
 					</rect>
 				</svg>
-				<svg class="Bar_STATEACTIVE_fs">
-					<rect id="Bar_STATEACTIVE_fs" rx="1" ry="1" x="0" y="0" width="27" height="2">
+				<svg class="Bar_STATEACTIVE_dq">
+					<rect id="Bar_STATEACTIVE_dq" rx="1" ry="1" x="0" y="0" width="27" height="2">
 					</rect>
 				</svg>
-				<div id="Tabs_ft">
-					<div id="METADATA_fu">
+				<div id="Tabs_dr">
+					<div id="METADATA_ds">
 						<span>{"config":{},"type":"Tabs","theme":"Base","nodeName":"Tabs","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.162Z"}</span>
 					</div>
-					<div id="PLACEHOLDER_Tab_Item_fv">
-						<div id="METADATA_fw">
+					<div id="PLACEHOLDER_Tab_Item_dt">
+						<div id="METADATA_du">
 							<span>{"config":{},"type":"Group","theme":"Base","nodeName":"[PLACEHOLDER] Tab Item","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.138Z"}</span>
 						</div>
-						<div id="Area_fx">
-							<div id="METADATA_fy">
+						<div id="Area_dv">
+							<div id="METADATA_dw">
 								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Area","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.136Z"}</span>
 							</div>
-							<svg class="Placement_Area_fz">
-								<rect id="Placement_Area_fz" rx="0" ry="0" x="0" y="0" width="42" height="42">
+							<svg class="Placement_Area_dx">
+								<rect id="Placement_Area_dx" rx="0" ry="0" x="0" y="0" width="42" height="42">
 								</rect>
 							</svg>
-							<svg class="Bar_f">
-								<rect id="Bar_f" rx="1" ry="1" x="0" y="0" width="42" height="2">
+							<svg class="Bar_dy">
+								<rect id="Bar_dy" rx="1" ry="1" x="0" y="0" width="42" height="2">
 								</rect>
 							</svg>
 						</div>
-						<div id="Label_f">
+						<div id="Label_dz">
 							<span>Label</span>
 						</div>
 					</div>
-					<div id="Tab_Item_f">
-						<div id="METADATA_f">
+					<div id="Tab_Item_d">
+						<div id="METADATA_d">
 							<span>{"config":{},"type":"TabItem","theme":"Base","nodeName":"Tab Item","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.146Z"}</span>
 						</div>
-						<div id="Area_f">
-							<div id="METADATA_ga">
+						<div id="Area_d">
+							<div id="METADATA_ea">
 								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Area","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.140Z"}</span>
 							</div>
-							<svg class="Placement_Area_f">
-								<rect id="Placement_Area_f" rx="0" ry="0" x="0" y="0" width="42" height="42">
+							<svg class="Placement_Area_d">
+								<rect id="Placement_Area_d" rx="0" ry="0" x="0" y="0" width="42" height="42">
 								</rect>
 							</svg>
-							<svg class="Bar_ga">
-								<rect id="Bar_ga" rx="1" ry="1" x="0" y="0" width="42" height="2">
+							<svg class="Bar_d">
+								<rect id="Bar_d" rx="1" ry="1" x="0" y="0" width="42" height="2">
 								</rect>
 							</svg>
 						</div>
 					</div>
-					<div id="Tab_Item_ga">
-						<div id="METADATA_gb">
+					<div id="Tab_Item_ea">
+						<div id="METADATA_eb">
 							<span>{"config":{"STATE":"ACTIVE"},"type":"TabItem","theme":"Base","nodeName":"Tab Item","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.159Z"}</span>
 						</div>
-						<div id="Area_ga">
-							<div id="METADATA_gc">
+						<div id="Area_ea">
+							<div id="METADATA_ec">
 								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Area","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.155Z"}</span>
 							</div>
-							<svg class="Placement_Area_STATEACTIVE_gc">
-								<rect id="Placement_Area_STATEACTIVE_gc" rx="0" ry="0" x="0" y="0" width="42" height="42">
+							<svg class="Placement_Area_STATEACTIVE_ea">
+								<rect id="Placement_Area_STATEACTIVE_ea" rx="0" ry="0" x="0" y="0" width="42" height="42">
 								</rect>
 							</svg>
 						</div>
