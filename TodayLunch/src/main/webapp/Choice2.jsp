@@ -1,19 +1,20 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>finalResult</title>
+<title>Choice2</title>
 <style id="applicationStylesheet" type="text/css">
 	.mediaViewInfo {
-		--web-view-name: finalResult;
-		--web-view-id: finalResult;
+		--web-view-name: Choice2;
+		--web-view-id: Choice2;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
 	:root {
-		--web-view-ids: finalResult;
+		--web-view-ids: Choice2;
 	}
 	* {
 		margin: 0;
@@ -21,14 +22,14 @@
 		box-sizing: border-box;
 		border: none;
 	}
-	#finalResult {
+	#Choice2 {
 		position: absolute;
 		width: 1366px;
 		height: 1152px;
 		background-color: rgba(255,255,255,1);
 		overflow: hidden;
-		--web-view-name: finalResult;
-		--web-view-id: finalResult;
+		--web-view-name: Choice2;
+		--web-view-id: Choice2;
 		--web-scale-on-resize: true;
 		--web-enable-deep-linking: true;
 	}
@@ -43,8 +44,8 @@
 	
 	}
 	#n___ {
-		left: 320px;
-		top: 123px;
+		left: 319px;
+		top: 179px;
 		position: absolute;
 		overflow: visible;
 		width: 727px;
@@ -55,6 +56,34 @@
 		font-weight: normal;
 		font-size: 60px;
 		color: rgba(64,51,50,1);
+	}
+	#n_01__Step_02-__03_ {
+		left: 329px;
+		top: 339px;
+		position: absolute;
+		overflow: visible;
+		width: 727px;
+		height: 44px;
+		text-align: center;
+		font-family: ONE Mobile POP;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 40px;
+		color: rgba(86,86,86,1);
+	}
+	#n____ {
+		left: 254px;
+		top: 436px;
+		position: absolute;
+		overflow: visible;
+		width: 888px;
+		height: 49px;
+		text-align: center;
+		font-family: IM_Hyemin;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 40px;
+		color: rgba(86,86,86,1);
 	}
 	#n_143620 {
 		position: absolute;
@@ -128,11 +157,15 @@
 	}
 	#n_375 {
 		position: absolute;
-		width: 251.923px;
-		height: 95.475px;
-		left: 592.553px;
-		top: 839px;
+		width: 163.894px;
+		height: 96px;
+		left: 636px;
+		top: 712px;
 		overflow: visible;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: Choice3.jsp;
+		cursor: pointer;
 	}
 	#Area {
 		fill: rgba(242,89,127,1);
@@ -140,18 +173,18 @@
 	.Area {
 		overflow: visible;
 		position: absolute;
-		width: 251.923px;
+		width: 163.894px;
 		height: 57.948px;
 		left: 0px;
-		top: 37.526px;
+		top: 38.052px;
 		transform: matrix(1,0,0,1,0,0);
 	}
 	#Label {
-		left: 43px;
+		left: 57px;
 		top: 56px;
 		position: absolute;
 		overflow: visible;
-		width: 165px;
+		width: 51px;
 		white-space: nowrap;
 		line-height: 24px;
 		margin-top: -2px;
@@ -163,39 +196,332 @@
 		color: rgba(255,255,255,1);
 		letter-spacing: 0.24px;
 	}
-	#Area_z {
+	#Area_ {
 		opacity: 0;
 		fill: rgba(252,252,252,1);
 	}
-	.Area_z {
+	.Area_ {
 		position: absolute;
 		overflow: visible;
 		width: 20px;
 		height: 20px;
-		left: 46px;
+		left: 3px;
 		top: 0px;
 	}
-	#Rectangle {
-		position: absolute;
-		width: 759px;
-		height: 506px;
-		left: 332px;
-		top: 244px;
-		overflow: visible;
+	#Area_ba {
+		fill: rgba(236,236,236,1);
+		stroke: rgba(212,212,213,1);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
 	}
-	#n____ {
-		left: 268px;
-		top: 790px;
+	.Area_ba {
 		position: absolute;
 		overflow: visible;
-		width: 888px;
-		height: 49px;
+		width: 129px;
+		height: 50px;
+		left: 254px;
+		top: 539px;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: Choice3.jsp;
+		cursor: pointer;
+	}
+	#Value {
+		left: 286px;
+		top: 555px;
+		position: absolute;
+		overflow: visible;
+		width: 65px;
+		white-space: nowrap;
 		text-align: center;
-		font-family: IM_Hyemin;
+		font-family: ONE Mobile POP;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 40px;
-		color: rgba(86,86,86,1);
+		font-size: 16px;
+		color: rgba(112,112,112,1);
+	}
+	#Area_bb {
+		fill: rgba(236,236,236,1);
+		stroke: rgba(212,212,213,1);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Area_bb {
+		position: absolute;
+		overflow: visible;
+		width: 129px;
+		height: 50px;
+		left: 453px;
+		top: 539px;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: Choice3.jsp;
+		cursor: pointer;
+	}
+	#Value_ {
+		left: 503px;
+		top: 555px;
+		position: absolute;
+		overflow: visible;
+		width: 29px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: ONE Mobile POP;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(112,112,112,1);
+	}
+	#Area_bc {
+		fill: rgba(236,236,236,1);
+		stroke: rgba(212,212,213,1);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Area_bc {
+		position: absolute;
+		overflow: visible;
+		width: 129px;
+		height: 50px;
+		left: 652px;
+		top: 539px;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: Choice3.jsp;
+		cursor: pointer;
+	}
+	#Value_ba {
+		left: 687px;
+		top: 555px;
+		position: absolute;
+		overflow: visible;
+		width: 59px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: ONE Mobile POP;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(112,112,112,1);
+	}
+	#Area_bd {
+		fill: rgba(236,236,236,1);
+		stroke: rgba(212,212,213,1);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Area_bd {
+		position: absolute;
+		overflow: visible;
+		width: 129px;
+		height: 50px;
+		left: 1050px;
+		top: 539px;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: Choice3.jsp;
+		cursor: pointer;
+	}
+	#Value_bb {
+		left: 1093px;
+		top: 555px;
+		position: absolute;
+		overflow: visible;
+		width: 43px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: ONE Mobile POP;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(112,112,112,1);
+	}
+	#Area_be {
+		fill: rgba(236,236,236,1);
+		stroke: rgba(212,212,213,1);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Area_be {
+		position: absolute;
+		overflow: visible;
+		width: 129px;
+		height: 50px;
+		left: 851px;
+		top: 539px;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: Choice3.jsp;
+		cursor: pointer;
+	}
+	#Value_bc {
+		left: 894px;
+		top: 555px;
+		position: absolute;
+		overflow: visible;
+		width: 43px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: ONE Mobile POP;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(112,112,112,1);
+	}
+	#Area_bf {
+		fill: rgba(236,236,236,1);
+		stroke: rgba(212,212,213,1);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Area_bf {
+		position: absolute;
+		overflow: visible;
+		width: 129px;
+		height: 50px;
+		left: 351px;
+		top: 629px;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: Choice3.jsp;
+		cursor: pointer;
+	}
+	#Value_bd {
+		left: 394px;
+		top: 645px;
+		position: absolute;
+		overflow: visible;
+		width: 43px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: ONE Mobile POP;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(112,112,112,1);
+	}
+	#Area_bg {
+		fill: rgba(236,236,236,1);
+		stroke: rgba(212,212,213,1);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Area_bg {
+		position: absolute;
+		overflow: visible;
+		width: 129px;
+		height: 50px;
+		left: 550px;
+		top: 629px;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: Choice3.jsp;
+		cursor: pointer;
+	}
+	#Value_be {
+		left: 593px;
+		top: 645px;
+		position: absolute;
+		overflow: visible;
+		width: 43px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: ONE Mobile POP;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(112,112,112,1);
+	}
+	#Area_bh {
+		fill: rgba(236,236,236,1);
+		stroke: rgba(212,212,213,1);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Area_bh {
+		position: absolute;
+		overflow: visible;
+		width: 129px;
+		height: 50px;
+		left: 749px;
+		top: 629px;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: Choice3.jsp;
+		cursor: pointer;
+	}
+	#Value_bg {
+		left: 793px;
+		top: 645px;
+		position: absolute;
+		overflow: visible;
+		width: 41px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: ONE Mobile POP;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(112,112,112,1);
+	}
+	#Area_bi {
+		fill: rgba(236,236,236,1);
+		stroke: rgba(212,212,213,1);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	.Area_bi {
+		position: absolute;
+		overflow: visible;
+		width: 129px;
+		height: 50px;
+		left: 948px;
+		top: 629px;
+		--web-animation: fadein 0.30000001192092896s ease-out;
+		--web-action-type: page;
+		--web-action-target: Choice3.jsp;
+		cursor: pointer;
+	}
+	#Value_bi {
+		left: 1000px;
+		top: 645px;
+		position: absolute;
+		overflow: visible;
+		width: 27px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: ONE Mobile POP;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 16px;
+		color: rgba(112,112,112,1);
 	}
 	#n_143634 {
 		position: absolute;
@@ -241,7 +567,7 @@
 		top: 0px;
 		overflow: visible;
 	}
-	#METADATA_bl {
+	#METADATA_b {
 		display: none;
 		left: 357px;
 		top: 0px;
@@ -264,7 +590,7 @@
 		display: none;
 		overflow: visible;
 	}
-	#METADATA_ {
+	#METADATA_bq {
 		display: none;
 		left: 0px;
 		top: 0px;
@@ -278,7 +604,7 @@
 		font-weight: normal;
 		font-size: 3px;
 	}
-	#Area_ba {
+	#Area_br {
 		position: absolute;
 		width: 42px;
 		height: 53px;
@@ -286,7 +612,7 @@
 		top: 0px;
 		overflow: visible;
 	}
-	#METADATA_bb {
+	#METADATA_bs {
 		display: none;
 		left: 0px;
 		top: 0px;
@@ -324,7 +650,7 @@
 		left: 0px;
 		top: 51px;
 	}
-	#Label_be {
+	#Label_bv {
 		left: 0px;
 		top: 16px;
 		position: absolute;
@@ -346,7 +672,7 @@
 		top: 0px;
 		overflow: visible;
 	}
-	#METADATA_bg {
+	#METADATA_bx {
 		display: none;
 		left: 0px;
 		top: 0px;
@@ -360,7 +686,7 @@
 		font-weight: normal;
 		font-size: 3px;
 	}
-	#Area_bh {
+	#Area_by {
 		position: absolute;
 		width: 42px;
 		height: 53px;
@@ -368,7 +694,7 @@
 		top: 0px;
 		overflow: visible;
 	}
-	#METADATA_bi {
+	#METADATA_bz {
 		display: none;
 		left: 0px;
 		top: 0px;
@@ -382,11 +708,11 @@
 		font-weight: normal;
 		font-size: 3px;
 	}
-	#Placement_Area_bj {
+	#Placement_Area_b {
 		opacity: 0;
 		fill: rgba(255,255,255,1);
 	}
-	.Placement_Area_bj {
+	.Placement_Area_b {
 		position: absolute;
 		overflow: visible;
 		width: 42px;
@@ -394,11 +720,11 @@
 		left: 0px;
 		top: 0px;
 	}
-	#Bar_bk {
+	#Bar_b {
 		opacity: 0;
 		fill: rgba(62,62,62,1);
 	}
-	.Bar_bk {
+	.Bar_b {
 		position: absolute;
 		overflow: visible;
 		width: 42px;
@@ -406,7 +732,7 @@
 		left: 0px;
 		top: 51px;
 	}
-	#METADATA_bl {
+	#METADATA_b {
 		display: none;
 		left: 357px;
 		top: 0px;
@@ -420,7 +746,7 @@
 		font-weight: normal;
 		font-size: 3px;
 	}
-	#Area_bm {
+	#Area_b {
 		position: absolute;
 		width: 42px;
 		height: 53px;
@@ -428,7 +754,7 @@
 		top: 0px;
 		overflow: visible;
 	}
-	#METADATA_bn {
+	#METADATA_ca {
 		display: none;
 		left: 0px;
 		top: 0px;
@@ -462,17 +788,13 @@
 		top: 17px;
 		overflow: visible;
 	}
-	#Label_bq {
+	#Label_b {
 		left: 0px;
 		top: 0px;
 		position: absolute;
 		overflow: visible;
-		width: 355px;
+		width: 232px;
 		white-space: nowrap;
-		--web-animation: fadein 0.30000001192092896s ease-out;
-		--web-action-type: page;
-		--web-action-target: main.html;
-		cursor: pointer;
 		text-align: left;
 		font-family: ONE Mobile POP;
 		font-style: normal;
@@ -480,7 +802,7 @@
 		font-size: 18px;
 		color: rgba(64,51,50,1);
 	}
-	#Label_br {
+	#Label_ca {
 		left: 350px;
 		top: 0px;
 		position: absolute;
@@ -494,7 +816,7 @@
 		font-size: 18px;
 		color: rgba(64,51,50,1);
 	}
-	#Label_bs {
+	#Label_cb {
 		left: 516px;
 		top: 1px;
 		position: absolute;
@@ -508,7 +830,7 @@
 		font-size: 18px;
 		color: rgba(64,51,50,1);
 	}
-	#Label_bt {
+	#Label_cc {
 		left: 696px;
 		top: 0px;
 		position: absolute;
@@ -522,7 +844,7 @@
 		font-size: 18px;
 		color: rgba(64,51,50,1);
 	}
-	#Label_bu {
+	#Label_cd {
 		left: 891px;
 		top: 0px;
 		position: absolute;
@@ -536,7 +858,7 @@
 		font-size: 18px;
 		color: rgba(64,51,50,1);
 	}
-	#Label_bv {
+	#Label_ce {
 		left: 1186px;
 		top: 0px;
 		position: absolute;
@@ -550,7 +872,7 @@
 		font-size: 18px;
 		color: rgba(64,51,50,1);
 	}
-	#Label_bw {
+	#Label_cf {
 		left: 1260px;
 		top: 0px;
 		position: absolute;
@@ -564,7 +886,7 @@
 		font-size: 18px;
 		color: rgba(64,51,50,1);
 	}
-	#Tabs_bx {
+	#Tabs_ce {
 		position: absolute;
 		width: 176px;
 		height: 42px;
@@ -572,7 +894,7 @@
 		top: 11px;
 		overflow: visible;
 	}
-	#METADATA_by {
+	#METADATA_cf {
 		display: none;
 		left: 2px;
 		top: 0px;
@@ -586,7 +908,7 @@
 		font-weight: normal;
 		font-size: 3px;
 	}
-	#PLACEHOLDER_Tab_Item_bz {
+	#PLACEHOLDER_Tab_Item_cg {
 		position: absolute;
 		width: 42px;
 		height: 42px;
@@ -595,7 +917,7 @@
 		display: none;
 		overflow: visible;
 	}
-	#METADATA_b {
+	#METADATA_ch {
 		display: none;
 		left: 0px;
 		top: 0px;
@@ -609,7 +931,7 @@
 		font-weight: normal;
 		font-size: 3px;
 	}
-	#Area_b {
+	#Area_ci {
 		position: absolute;
 		width: 42px;
 		height: 42px;
@@ -617,7 +939,7 @@
 		top: 0px;
 		overflow: visible;
 	}
-	#METADATA_ca {
+	#METADATA_cj {
 		display: none;
 		left: 0px;
 		top: 0px;
@@ -631,11 +953,11 @@
 		font-weight: normal;
 		font-size: 3px;
 	}
-	#Placement_Area_b {
+	#Placement_Area_ck {
 		opacity: 0;
 		fill: rgba(255,255,255,1);
 	}
-	.Placement_Area_b {
+	.Placement_Area_ck {
 		position: absolute;
 		overflow: visible;
 		width: 42px;
@@ -643,11 +965,11 @@
 		left: 0px;
 		top: 0px;
 	}
-	#Bar_b {
+	#Bar_cl {
 		opacity: 0;
 		fill: rgba(62,62,62,1);
 	}
-	.Bar_b {
+	.Bar_cl {
 		position: absolute;
 		overflow: visible;
 		width: 42px;
@@ -655,7 +977,7 @@
 		left: 0px;
 		top: 40px;
 	}
-	#Label_b {
+	#Label_cm {
 		left: 0px;
 		top: 10px;
 		position: absolute;
@@ -669,7 +991,7 @@
 		font-size: 16px;
 		color: rgba(139,139,139,1);
 	}
-	#Tab_Item_b {
+	#Tab_Item_cn {
 		position: absolute;
 		width: 42px;
 		height: 42px;
@@ -677,7 +999,7 @@
 		top: 0px;
 		overflow: visible;
 	}
-	#METADATA_cb {
+	#METADATA_co {
 		display: none;
 		left: 0px;
 		top: 0px;
@@ -691,7 +1013,7 @@
 		font-weight: normal;
 		font-size: 3px;
 	}
-	#Area_ca {
+	#Area_cp {
 		position: absolute;
 		width: 42px;
 		height: 42px;
@@ -699,7 +1021,7 @@
 		top: 0px;
 		overflow: visible;
 	}
-	#METADATA_cc {
+	#METADATA_cq {
 		display: none;
 		left: 0px;
 		top: 0px;
@@ -713,11 +1035,11 @@
 		font-weight: normal;
 		font-size: 3px;
 	}
-	#Placement_Area_ca {
+	#Placement_Area_cr {
 		opacity: 0;
 		fill: rgba(255,255,255,1);
 	}
-	.Placement_Area_ca {
+	.Placement_Area_cr {
 		position: absolute;
 		overflow: visible;
 		width: 42px;
@@ -725,11 +1047,11 @@
 		left: 0px;
 		top: 0px;
 	}
-	#Bar_cb {
+	#Bar_cs {
 		opacity: 0;
 		fill: rgba(62,62,62,1);
 	}
-	.Bar_cb {
+	.Bar_cs {
 		position: absolute;
 		overflow: visible;
 		width: 42px;
@@ -737,203 +1059,9 @@
 		left: 0px;
 		top: 40px;
 	}
-	#Tab_Item_cc {
+	#Tab_Item_ct {
 		position: absolute;
 		width: 125px;
-		height: 42px;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-	}
-	#METADATA_cd {
-		display: none;
-		left: 0px;
-		top: 0px;
-		position: absolute;
-		overflow: hidden;
-		width: 11px;
-		height: 10px;
-		text-align: left;
-		font-family: Arial;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 3px;
-	}
-	#Area_ce {
-		position: absolute;
-		width: 125px;
-		height: 42px;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-	}
-	#METADATA_cf {
-		display: none;
-		left: 0px;
-		top: 0px;
-		position: absolute;
-		overflow: hidden;
-		width: 11px;
-		height: 10px;
-		text-align: left;
-		font-family: Arial;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 3px;
-	}
-	#Placement_Area_STATEACTIVE_cg {
-		opacity: 0;
-		fill: rgba(255,255,255,1);
-	}
-	.Placement_Area_STATEACTIVE_cg {
-		position: absolute;
-		overflow: visible;
-		width: 42px;
-		height: 42px;
-		left: 0px;
-		top: 0px;
-	}
-	#Bar_STATEACTIVE {
-		fill: rgba(255,255,255,1);
-	}
-	.Bar_STATEACTIVE {
-		width: 27px;
-		height: 2px;
-		position: absolute;
-		overflow: visible;
-		transform: translate(0px, 0px) matrix(1,0,0,1,110.5,20.5) rotate(90deg);
-		transform-origin: center;
-	}
-	#Tabs_ci {
-		position: absolute;
-		width: 42px;
-		height: 42px;
-		left: 882px;
-		top: 6px;
-		overflow: visible;
-	}
-	#METADATA_cj {
-		display: none;
-		left: -132px;
-		top: 0px;
-		position: absolute;
-		overflow: hidden;
-		width: 11px;
-		height: 10px;
-		text-align: left;
-		font-family: Arial;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 3px;
-	}
-	#PLACEHOLDER_Tab_Item_ck {
-		position: absolute;
-		width: 42px;
-		height: 42px;
-		left: 60px;
-		top: 0px;
-		display: none;
-		overflow: visible;
-	}
-	#METADATA_cl {
-		display: none;
-		left: 0px;
-		top: 0px;
-		position: absolute;
-		overflow: hidden;
-		width: 11px;
-		height: 10px;
-		text-align: left;
-		font-family: Arial;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 3px;
-	}
-	#Area_cm {
-		position: absolute;
-		width: 42px;
-		height: 42px;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-	}
-	#METADATA_cn {
-		display: none;
-		left: 0px;
-		top: 0px;
-		position: absolute;
-		overflow: hidden;
-		width: 11px;
-		height: 10px;
-		text-align: left;
-		font-family: Arial;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 3px;
-	}
-	#Placement_Area_co {
-		opacity: 0;
-		fill: rgba(255,255,255,1);
-	}
-	.Placement_Area_co {
-		position: absolute;
-		overflow: visible;
-		width: 42px;
-		height: 42px;
-		left: 0px;
-		top: 0px;
-	}
-	#Bar_cp {
-		opacity: 0;
-		fill: rgba(62,62,62,1);
-	}
-	.Bar_cp {
-		position: absolute;
-		overflow: visible;
-		width: 42px;
-		height: 2px;
-		left: 0px;
-		top: 40px;
-	}
-	#Label_cq {
-		left: 0px;
-		top: 10px;
-		position: absolute;
-		overflow: visible;
-		width: 43px;
-		white-space: nowrap;
-		text-align: left;
-		font-family: Noto Sans;
-		font-style: normal;
-		font-weight: bold;
-		font-size: 16px;
-		color: rgba(139,139,139,1);
-	}
-	#Tab_Item_cr {
-		position: absolute;
-		width: 42px;
-		height: 42px;
-		left: 0px;
-		top: 0px;
-		overflow: visible;
-	}
-	#METADATA_cs {
-		display: none;
-		left: 0px;
-		top: 0px;
-		position: absolute;
-		overflow: hidden;
-		width: 11px;
-		height: 10px;
-		text-align: left;
-		font-family: Arial;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 3px;
-	}
-	#Area_ct {
-		position: absolute;
-		width: 42px;
 		height: 42px;
 		left: 0px;
 		top: 0px;
@@ -953,11 +1081,33 @@
 		font-weight: normal;
 		font-size: 3px;
 	}
-	#Placement_Area_cv {
+	#Area_cv {
+		position: absolute;
+		width: 125px;
+		height: 42px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#METADATA_cw {
+		display: none;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Placement_Area_STATEACTIVE_cx {
 		opacity: 0;
 		fill: rgba(255,255,255,1);
 	}
-	.Placement_Area_cv {
+	.Placement_Area_STATEACTIVE_cx {
 		position: absolute;
 		overflow: visible;
 		width: 42px;
@@ -965,51 +1115,28 @@
 		left: 0px;
 		top: 0px;
 	}
-	#Bar_cw {
-		opacity: 0;
-		fill: rgba(62,62,62,1);
-	}
-	.Bar_cw {
-		position: absolute;
-		overflow: visible;
-		width: 42px;
-		height: 2px;
-		left: 0px;
-		top: 40px;
-	}
-	#Bar_STATEACTIVE_cx {
+	#Bar_STATEACTIVE {
 		fill: rgba(255,255,255,1);
 	}
-	.Bar_STATEACTIVE_cx {
+	.Bar_STATEACTIVE {
 		width: 27px;
 		height: 2px;
 		position: absolute;
 		overflow: visible;
-		transform: translate(0px, 0px) matrix(1,0,0,1,479.5,26.5) rotate(90deg);
-		transform-origin: center;
-	}
-	#Bar_STATEACTIVE_cy {
-		fill: rgba(255,255,255,1);
-	}
-	.Bar_STATEACTIVE_cy {
-		width: 27px;
-		height: 2px;
-		position: absolute;
-		overflow: visible;
-		transform: translate(0px, 0px) matrix(1,0,0,1,865.5,26.5) rotate(90deg);
+		transform: translate(0px, 0px) matrix(1,0,0,1,110.5,20.5) rotate(90deg);
 		transform-origin: center;
 	}
 	#Tabs_cz {
 		position: absolute;
-		width: 174px;
+		width: 42px;
 		height: 42px;
-		left: 1152px;
-		top: 7px;
+		left: 882px;
+		top: 6px;
 		overflow: visible;
 	}
 	#METADATA_c {
 		display: none;
-		left: 0px;
+		left: -132px;
 		top: 0px;
 		position: absolute;
 		overflow: hidden;
@@ -1025,7 +1152,7 @@
 		position: absolute;
 		width: 42px;
 		height: 42px;
-		left: 192px;
+		left: 60px;
 		top: 0px;
 		display: none;
 		overflow: visible;
@@ -1108,7 +1235,7 @@
 		position: absolute;
 		width: 42px;
 		height: 42px;
-		left: 132px;
+		left: 0px;
 		top: 0px;
 		overflow: visible;
 	}
@@ -1172,34 +1299,34 @@
 		left: 0px;
 		top: 40px;
 	}
-	#Tab_Item_de {
+	#Bar_STATEACTIVE_de {
+		fill: rgba(255,255,255,1);
+	}
+	.Bar_STATEACTIVE_de {
+		width: 27px;
+		height: 2px;
 		position: absolute;
-		width: 42px;
-		height: 42px;
-		left: 0px;
-		top: 0px;
 		overflow: visible;
+		transform: translate(0px, 0px) matrix(1,0,0,1,479.5,26.5) rotate(90deg);
+		transform-origin: center;
 	}
-	#METADATA_df {
-		display: none;
-		left: 0px;
-		top: 0px;
-		position: absolute;
-		overflow: hidden;
-		width: 11px;
-		height: 10px;
-		text-align: left;
-		font-family: Arial;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 3px;
+	#Bar_STATEACTIVE_df {
+		fill: rgba(255,255,255,1);
 	}
-	#Area_dg {
+	.Bar_STATEACTIVE_df {
+		width: 27px;
+		height: 2px;
 		position: absolute;
-		width: 42px;
+		overflow: visible;
+		transform: translate(0px, 0px) matrix(1,0,0,1,865.5,26.5) rotate(90deg);
+		transform-origin: center;
+	}
+	#Tabs_dg {
+		position: absolute;
+		width: 174px;
 		height: 42px;
-		left: 0px;
-		top: 0px;
+		left: 1152px;
+		top: 7px;
 		overflow: visible;
 	}
 	#METADATA_dh {
@@ -1216,11 +1343,206 @@
 		font-weight: normal;
 		font-size: 3px;
 	}
-	#Placement_Area_STATEACTIVE_di {
+	#PLACEHOLDER_Tab_Item_di {
+		position: absolute;
+		width: 42px;
+		height: 42px;
+		left: 192px;
+		top: 0px;
+		display: none;
+		overflow: visible;
+	}
+	#METADATA_dj {
+		display: none;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Area_dk {
+		position: absolute;
+		width: 42px;
+		height: 42px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#METADATA_dl {
+		display: none;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Placement_Area_dm {
 		opacity: 0;
 		fill: rgba(255,255,255,1);
 	}
-	.Placement_Area_STATEACTIVE_di {
+	.Placement_Area_dm {
+		position: absolute;
+		overflow: visible;
+		width: 42px;
+		height: 42px;
+		left: 0px;
+		top: 0px;
+	}
+	#Bar_dn {
+		opacity: 0;
+		fill: rgba(62,62,62,1);
+	}
+	.Bar_dn {
+		position: absolute;
+		overflow: visible;
+		width: 42px;
+		height: 2px;
+		left: 0px;
+		top: 40px;
+	}
+	#Label_do {
+		left: 0px;
+		top: 10px;
+		position: absolute;
+		overflow: visible;
+		width: 43px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Noto Sans;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 16px;
+		color: rgba(139,139,139,1);
+	}
+	#Tab_Item_dp {
+		position: absolute;
+		width: 42px;
+		height: 42px;
+		left: 132px;
+		top: 0px;
+		overflow: visible;
+	}
+	#METADATA_dq {
+		display: none;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Area_dr {
+		position: absolute;
+		width: 42px;
+		height: 42px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#METADATA_ds {
+		display: none;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Placement_Area_dt {
+		opacity: 0;
+		fill: rgba(255,255,255,1);
+	}
+	.Placement_Area_dt {
+		position: absolute;
+		overflow: visible;
+		width: 42px;
+		height: 42px;
+		left: 0px;
+		top: 0px;
+	}
+	#Bar_du {
+		opacity: 0;
+		fill: rgba(62,62,62,1);
+	}
+	.Bar_du {
+		position: absolute;
+		overflow: visible;
+		width: 42px;
+		height: 2px;
+		left: 0px;
+		top: 40px;
+	}
+	#Tab_Item_dv {
+		position: absolute;
+		width: 42px;
+		height: 42px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#METADATA_dw {
+		display: none;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Area_dx {
+		position: absolute;
+		width: 42px;
+		height: 42px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#METADATA_dy {
+		display: none;
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: hidden;
+		width: 11px;
+		height: 10px;
+		text-align: left;
+		font-family: Arial;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 3px;
+	}
+	#Placement_Area_STATEACTIVE_dz {
+		opacity: 0;
+		fill: rgba(255,255,255,1);
+	}
+	.Placement_Area_STATEACTIVE_dz {
 		position: absolute;
 		overflow: visible;
 		width: 42px;
@@ -4141,9 +4463,15 @@ window.application = new Application();
 </script>
 </head>
 <body>
-<div id="finalResult">
+<div id="Choice2">
 	<div id="n___">
 		<span>맞춤 메뉴 추천 서비스</span>
+	</div>
+	<div id="n_01__Step_02-__03_">
+		<span> </span><span style="color:rgba(212,212,213,1);">01  </span><span>Step 02-  </span><span style="color:rgba(212,212,213,1);">03 </span>
+	</div>
+	<div id="n____">
+		<span>오늘의 기분은 어떠한가요 ? </span>
 	</div>
 	<div id="n_143620">
 		<svg class="n_4691" viewBox="0 -106.832 888 598.355">
@@ -4163,23 +4491,81 @@ window.application = new Application();
 			<span>Copyright © 2022 인생모읍따.<br/>  All rights reserved</span>
 		</div>
 	</div>
-	<div id="n_375">
-		<svg class="Area" viewBox="0 0 251.923 57.948">
-			<path id="Area" d="M 28.65472984313965 0 L 223.2681121826172 0 C 239.0936889648438 0 251.9228515625 9.293522834777832 251.9228515625 20.75766563415527 L 251.9228515625 37.19081878662109 C 251.9228515625 40.67591857910156 250.7372283935547 43.96041870117188 248.4828643798828 47.06048202514648 C 243.8458099365234 53.44655609130859 234.2827301025391 57.948486328125 223.2681121826172 57.948486328125 L 28.65472984313965 57.948486328125 C 12.8291597366333 57.948486328125 0 48.65496444702148 0 37.19081878662109 L 0 20.75766563415527 C 0 9.293522834777832 12.8291597366333 0 28.65472984313965 0 Z">
+	<div onclick="application.goToTargetView(event)" id="n_375">
+		<svg class="Area" viewBox="0 0 163.894 57.948">
+			<path id="Area" d="M 18.64197540283203 0 L 145.2520599365234 0 C 155.5477447509766 0 163.89404296875 9.293522834777832 163.89404296875 20.75766563415527 L 163.89404296875 37.19081878662109 C 163.89404296875 40.67591857910156 163.1227111816406 43.96041870117188 161.6560821533203 47.06048202514648 C 158.6393432617188 53.44655609130859 152.4178619384766 57.948486328125 145.2520599365234 57.948486328125 L 18.64197540283203 57.948486328125 C 8.346296310424805 57.948486328125 0 48.65496444702148 0 37.19081878662109 L 0 20.75766563415527 C 0 9.293522834777832 8.346296310424805 0 18.64197540283203 0 Z">
 			</path>
 		</svg>
 		<div id="Label">
-			<span>마음에 안들어 ! 다시</span>
+			<span>Next</span>
 		</div>
-		<svg class="Area_z">
-			<rect id="Area_z" rx="0" ry="0" x="0" y="0" width="20" height="20">
+		<svg class="Area_">
+			<rect id="Area_" rx="0" ry="0" x="0" y="0" width="20" height="20">
 			</rect>
 		</svg>
 	</div>
-	<img id="Rectangle" src="Rectangle.png" srcset="Rectangle.png 1x, Rectangle@2x.png 2x">
-		
-	<div id="n____">
-		<span>뜨끈하고 진한 국물의 차슈 라멘</span>
+	<svg class="Area_ba">
+		<rect onclick="application.goToTargetView(event)" id="Area_ba" rx="4" ry="4" x="0" y="0" width="129" height="50">
+		</rect>
+	</svg>
+	<div id="Value">
+		<span>완전 좋아!</span>
+	</div>
+	<svg class="Area_bb">
+		<rect onclick="application.goToTargetView(event)" id="Area_bb" rx="4" ry="4" x="0" y="0" width="129" height="50">
+		</rect>
+	</svg>
+	<div id="Value_">
+		<span>설레</span>
+	</div>
+	<svg class="Area_bc">
+		<rect onclick="application.goToTargetView(event)" id="Area_bc" rx="4" ry="4" x="0" y="0" width="129" height="50">
+		</rect>
+	</svg>
+	<div id="Value_ba">
+		<span>그저 그래</span>
+	</div>
+	<svg class="Area_bd">
+		<rect onclick="application.goToTargetView(event)" id="Area_bd" rx="4" ry="4" x="0" y="0" width="129" height="50">
+		</rect>
+	</svg>
+	<div id="Value_bb">
+		<span>평온해</span>
+	</div>
+	<svg class="Area_be">
+		<rect onclick="application.goToTargetView(event)" id="Area_be" rx="4" ry="4" x="0" y="0" width="129" height="50">
+		</rect>
+	</svg>
+	<div id="Value_bc">
+		<span>피곤해</span>
+	</div>
+	<svg class="Area_bf">
+		<rect onclick="application.goToTargetView(event)" id="Area_bf" rx="4" ry="4" x="0" y="0" width="129" height="50">
+		</rect>
+	</svg>
+	<div id="Value_bd">
+		<span>짜증나</span>
+	</div>
+	<svg class="Area_bg">
+		<rect onclick="application.goToTargetView(event)" id="Area_bg" rx="4" ry="4" x="0" y="0" width="129" height="50">
+		</rect>
+	</svg>
+	<div id="Value_be">
+		<span>걱정돼</span>
+	</div>
+	<svg class="Area_bh">
+		<rect onclick="application.goToTargetView(event)" id="Area_bh" rx="4" ry="4" x="0" y="0" width="129" height="50">
+		</rect>
+	</svg>
+	<div id="Value_bg">
+		<span>우울해</span>
+	</div>
+	<svg class="Area_bi">
+		<rect onclick="application.goToTargetView(event)" id="Area_bi" rx="4" ry="4" x="0" y="0" width="129" height="50">
+		</rect>
+	</svg>
+	<div id="Value_bi">
+		<span>졸려</span>
 	</div>
 	<div id="n_143634">
 		<div id="n_4830">
@@ -4189,15 +4575,15 @@ window.application = new Application();
 					</rect>
 				</svg>
 				<div id="Tabs">
-					<div id="METADATA_bl">
+					<div id="METADATA_b">
 						<span>{"config":{"STATE":"ACTIVE"},"type":"TabItem","theme":"Base","nodeName":"Tab Item","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.159Z"}</span>
 					</div>
 					<div id="PLACEHOLDER_Tab_Item">
-						<div id="METADATA_">
+						<div id="METADATA_bq">
 							<span>{"config":{},"type":"Group","theme":"Base","nodeName":"[PLACEHOLDER] Tab Item","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.138Z"}</span>
 						</div>
-						<div id="Area_ba">
-							<div id="METADATA_bb">
+						<div id="Area_br">
+							<div id="METADATA_bs">
 								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Area","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.136Z"}</span>
 							</div>
 							<svg class="Placement_Area">
@@ -4209,33 +4595,33 @@ window.application = new Application();
 								</rect>
 							</svg>
 						</div>
-						<div id="Label_be">
+						<div id="Label_bv">
 							<span>Label</span>
 						</div>
 					</div>
 					<div id="Tab_Item">
-						<div id="METADATA_bg">
+						<div id="METADATA_bx">
 							<span>{"config":{},"type":"TabItem","theme":"Base","nodeName":"Tab Item","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.146Z"}</span>
 						</div>
-						<div id="Area_bh">
-							<div id="METADATA_bi">
+						<div id="Area_by">
+							<div id="METADATA_bz">
 								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Area","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.140Z"}</span>
 							</div>
-							<svg class="Placement_Area_bj">
-								<rect id="Placement_Area_bj" rx="0" ry="0" x="0" y="0" width="42" height="53">
+							<svg class="Placement_Area_b">
+								<rect id="Placement_Area_b" rx="0" ry="0" x="0" y="0" width="42" height="53">
 								</rect>
 							</svg>
-							<svg class="Bar_bk">
-								<rect id="Bar_bk" rx="1" ry="1" x="0" y="0" width="42" height="2">
+							<svg class="Bar_b">
+								<rect id="Bar_b" rx="1" ry="1" x="0" y="0" width="42" height="2">
 								</rect>
 							</svg>
 						</div>
 					</div>
-					<div id="METADATA_bl">
+					<div id="METADATA_b">
 						<span>{"config":{"STATE":"ACTIVE"},"type":"TabItem","theme":"Base","nodeName":"Tab Item","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.159Z"}</span>
 					</div>
-					<div id="Area_bm">
-						<div id="METADATA_bn">
+					<div id="Area_b">
+						<div id="METADATA_ca">
 							<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Area","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.155Z"}</span>
 						</div>
 						<svg class="Placement_Area_STATEACTIVE">
@@ -4244,82 +4630,82 @@ window.application = new Application();
 						</svg>
 					</div>
 					<div id="n_143633">
-						<div onclick="application.goToTargetView(event)" id="Label_bq">
-							<span> 오점 : 오늘의 점심                                                         </span>
+						<div id="Label_b">
+							<span> 오점 : 오늘의 점심                          </span>
 						</div>
-						<div id="Label_br">
+						<div id="Label_ca">
 							<span> 돌림판 게임</span>
 						</div>
-						<div id="Label_bs">
+						<div id="Label_cb">
 							<span> 이상형 월드컵</span>
 						</div>
-						<div id="Label_bt">
+						<div id="Label_cc">
 							<span>맞춤 추천 서비스</span>
 						</div>
-						<div id="Label_bu">
+						<div id="Label_cd">
 							<span>인근 맛집 탐방</span>
 						</div>
-						<div id="Label_bv">
+						<div id="Label_ce">
 							<span>로그인</span>
 						</div>
-						<div id="Label_bw">
+						<div id="Label_cf">
 							<span>회원가입</span>
 						</div>
 					</div>
 				</div>
-				<div id="Tabs_bx">
-					<div id="METADATA_by">
+				<div id="Tabs_ce">
+					<div id="METADATA_cf">
 						<span>{"config":{},"type":"Tabs","theme":"Base","nodeName":"Tabs","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.162Z"}</span>
 					</div>
-					<div id="PLACEHOLDER_Tab_Item_bz">
-						<div id="METADATA_b">
+					<div id="PLACEHOLDER_Tab_Item_cg">
+						<div id="METADATA_ch">
 							<span>{"config":{},"type":"Group","theme":"Base","nodeName":"[PLACEHOLDER] Tab Item","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.138Z"}</span>
 						</div>
-						<div id="Area_b">
-							<div id="METADATA_ca">
+						<div id="Area_ci">
+							<div id="METADATA_cj">
 								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Area","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.136Z"}</span>
 							</div>
-							<svg class="Placement_Area_b">
-								<rect id="Placement_Area_b" rx="0" ry="0" x="0" y="0" width="42" height="42">
+							<svg class="Placement_Area_ck">
+								<rect id="Placement_Area_ck" rx="0" ry="0" x="0" y="0" width="42" height="42">
 								</rect>
 							</svg>
-							<svg class="Bar_b">
-								<rect id="Bar_b" rx="1" ry="1" x="0" y="0" width="42" height="2">
+							<svg class="Bar_cl">
+								<rect id="Bar_cl" rx="1" ry="1" x="0" y="0" width="42" height="2">
 								</rect>
 							</svg>
 						</div>
-						<div id="Label_b">
+						<div id="Label_cm">
 							<span>Label</span>
 						</div>
 					</div>
-					<div id="Tab_Item_b">
-						<div id="METADATA_cb">
+					<div id="Tab_Item_cn">
+						<div id="METADATA_co">
 							<span>{"config":{},"type":"TabItem","theme":"Base","nodeName":"Tab Item","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.146Z"}</span>
 						</div>
-						<div id="Area_ca">
-							<div id="METADATA_cc">
+						<div id="Area_cp">
+							<div id="METADATA_cq">
 								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Area","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.140Z"}</span>
 							</div>
-							<svg class="Placement_Area_ca">
-								<rect id="Placement_Area_ca" rx="0" ry="0" x="0" y="0" width="42" height="42">
+							<svg class="Placement_Area_cr">
+								<rect id="Placement_Area_cr" rx="0" ry="0" x="0" y="0" width="42" height="42">
 								</rect>
 							</svg>
-							<svg class="Bar_cb">
-								<rect id="Bar_cb" rx="1" ry="1" x="0" y="0" width="42" height="2">
+							<svg class="Bar_cs">
+								<rect id="Bar_cs" rx="1" ry="1" x="0" y="0" width="42" height="2">
 								</rect>
 							</svg>
 						</div>
 					</div>
-					<div id="Tab_Item_cc">
-						<div id="METADATA_cd">
+					<div id="Tab_Item_ct">
+						<div id="METADATA_cu">
 							<span>{"config":{"STATE":"ACTIVE"},"type":"TabItem","theme":"Base","nodeName":"Tab Item","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.159Z"}</span>
 						</div>
-						<div id="Area_ce">
-							<div id="METADATA_cf">
+						<div id="Area_cv">
+							<div id="METADATA_cw">
 								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Area","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.155Z"}</span>
 							</div>
-							<svg class="Placement_Area_STATEACTIVE_cg">
-								<rect id="Placement_Area_STATEACTIVE_cg" rx="0" ry="0" x="0" y="0" width="42" height="42">
+							<svg class="Placement_Area_STATEACTIVE_cx">
+								<rect id="Placement_Area_STATEACTIVE_cx" rx="0" ry="0" x="0" y="0" width="42" height="42">
 								</rect>
 							</svg>
 							<svg class="Bar_STATEACTIVE">
@@ -4329,58 +4715,6 @@ window.application = new Application();
 						</div>
 					</div>
 				</div>
-				<div id="Tabs_ci">
-					<div id="METADATA_cj">
-						<span>{"config":{},"type":"Tabs","theme":"Base","nodeName":"Tabs","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.162Z"}</span>
-					</div>
-					<div id="PLACEHOLDER_Tab_Item_ck">
-						<div id="METADATA_cl">
-							<span>{"config":{},"type":"Group","theme":"Base","nodeName":"[PLACEHOLDER] Tab Item","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.138Z"}</span>
-						</div>
-						<div id="Area_cm">
-							<div id="METADATA_cn">
-								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Area","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.136Z"}</span>
-							</div>
-							<svg class="Placement_Area_co">
-								<rect id="Placement_Area_co" rx="0" ry="0" x="0" y="0" width="42" height="42">
-								</rect>
-							</svg>
-							<svg class="Bar_cp">
-								<rect id="Bar_cp" rx="1" ry="1" x="0" y="0" width="42" height="2">
-								</rect>
-							</svg>
-						</div>
-						<div id="Label_cq">
-							<span>Label</span>
-						</div>
-					</div>
-					<div id="Tab_Item_cr">
-						<div id="METADATA_cs">
-							<span>{"config":{},"type":"TabItem","theme":"Base","nodeName":"Tab Item","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.146Z"}</span>
-						</div>
-						<div id="Area_ct">
-							<div id="METADATA_cu">
-								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Area","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.140Z"}</span>
-							</div>
-							<svg class="Placement_Area_cv">
-								<rect id="Placement_Area_cv" rx="0" ry="0" x="0" y="0" width="42" height="42">
-								</rect>
-							</svg>
-							<svg class="Bar_cw">
-								<rect id="Bar_cw" rx="1" ry="1" x="0" y="0" width="42" height="2">
-								</rect>
-							</svg>
-						</div>
-					</div>
-				</div>
-				<svg class="Bar_STATEACTIVE_cx">
-					<rect id="Bar_STATEACTIVE_cx" rx="1" ry="1" x="0" y="0" width="27" height="2">
-					</rect>
-				</svg>
-				<svg class="Bar_STATEACTIVE_cy">
-					<rect id="Bar_STATEACTIVE_cy" rx="1" ry="1" x="0" y="0" width="27" height="2">
-					</rect>
-				</svg>
 				<div id="Tabs_cz">
 					<div id="METADATA_c">
 						<span>{"config":{},"type":"Tabs","theme":"Base","nodeName":"Tabs","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.162Z"}</span>
@@ -4424,16 +4758,68 @@ window.application = new Application();
 							</svg>
 						</div>
 					</div>
-					<div id="Tab_Item_de">
-						<div id="METADATA_df">
+				</div>
+				<svg class="Bar_STATEACTIVE_de">
+					<rect id="Bar_STATEACTIVE_de" rx="1" ry="1" x="0" y="0" width="27" height="2">
+					</rect>
+				</svg>
+				<svg class="Bar_STATEACTIVE_df">
+					<rect id="Bar_STATEACTIVE_df" rx="1" ry="1" x="0" y="0" width="27" height="2">
+					</rect>
+				</svg>
+				<div id="Tabs_dg">
+					<div id="METADATA_dh">
+						<span>{"config":{},"type":"Tabs","theme":"Base","nodeName":"Tabs","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.162Z"}</span>
+					</div>
+					<div id="PLACEHOLDER_Tab_Item_di">
+						<div id="METADATA_dj">
+							<span>{"config":{},"type":"Group","theme":"Base","nodeName":"[PLACEHOLDER] Tab Item","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.138Z"}</span>
+						</div>
+						<div id="Area_dk">
+							<div id="METADATA_dl">
+								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Area","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.136Z"}</span>
+							</div>
+							<svg class="Placement_Area_dm">
+								<rect id="Placement_Area_dm" rx="0" ry="0" x="0" y="0" width="42" height="42">
+								</rect>
+							</svg>
+							<svg class="Bar_dn">
+								<rect id="Bar_dn" rx="1" ry="1" x="0" y="0" width="42" height="2">
+								</rect>
+							</svg>
+						</div>
+						<div id="Label_do">
+							<span>Label</span>
+						</div>
+					</div>
+					<div id="Tab_Item_dp">
+						<div id="METADATA_dq">
+							<span>{"config":{},"type":"TabItem","theme":"Base","nodeName":"Tab Item","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.146Z"}</span>
+						</div>
+						<div id="Area_dr">
+							<div id="METADATA_ds">
+								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Area","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.140Z"}</span>
+							</div>
+							<svg class="Placement_Area_dt">
+								<rect id="Placement_Area_dt" rx="0" ry="0" x="0" y="0" width="42" height="42">
+								</rect>
+							</svg>
+							<svg class="Bar_du">
+								<rect id="Bar_du" rx="1" ry="1" x="0" y="0" width="42" height="2">
+								</rect>
+							</svg>
+						</div>
+					</div>
+					<div id="Tab_Item_dv">
+						<div id="METADATA_dw">
 							<span>{"config":{"STATE":"ACTIVE"},"type":"TabItem","theme":"Base","nodeName":"Tab Item","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.159Z"}</span>
 						</div>
-						<div id="Area_dg">
-							<div id="METADATA_dh">
+						<div id="Area_dx">
+							<div id="METADATA_dy">
 								<span>{"config":{},"type":"Group","theme":"Base","nodeName":"Area","__plugin":"Mockup","__version":"1.4.13","__lastUpdate":"2022-01-27T07:57:18.155Z"}</span>
 							</div>
-							<svg class="Placement_Area_STATEACTIVE_di">
-								<rect id="Placement_Area_STATEACTIVE_di" rx="0" ry="0" x="0" y="0" width="42" height="42">
+							<svg class="Placement_Area_STATEACTIVE_dz">
+								<rect id="Placement_Area_STATEACTIVE_dz" rx="0" ry="0" x="0" y="0" width="42" height="42">
 								</rect>
 							</svg>
 						</div>

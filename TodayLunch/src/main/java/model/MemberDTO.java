@@ -5,7 +5,8 @@ public class MemberDTO {
 	private String pw;
 	private String nickname;
 	private String dong;
-
+	
+	
 	public MemberDTO(String email, String pw, String nickname, String dong) {
 		super();
 		this.email = email;
@@ -20,7 +21,8 @@ public class MemberDTO {
 		this.pw = pw;
 	}
 
-
+	
+	
 	public String getEmail() {
 		return email;
 	}
@@ -52,5 +54,6 @@ public class MemberDTO {
 	public void setDong(String dong) {
 		this.dong = dong;
 	}
+
 
 }
