@@ -4666,7 +4666,7 @@ window.application = new Application();
 			</svg>
 		</div>
 		<div id="fleet">
-			<span>오점: 오늘의 점심</span>
+			<span >오점: 오늘의 점심</span>
 		</div>
 		<div id="Copyright__2021_UI8_LLC_All_ri">
 			<span>Copyright © 2022 인생모읍따.<br/>  All rights reserved</span>

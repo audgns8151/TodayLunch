@@ -1,0 +1,126 @@
+:root { 
+  --black: #000000;
+  --brink-pink: #f2597f;
+  --dove-gray: #707070;
+  --iron: #d4d4d5;
+  --masala: #3d3d3d;
+  --mirage: #1c2126;
+  --scarpa-flow: #555558;
+  --tundora: #483f3f4a;
+  --white: #ffffff;
+  --woody-brown: #403332;
+ 
+  --font-size-l: 18px;
+  --font-size-m: 16px;
+  --font-size-xl: 20px;
+  --font-size-xxl: 25px;
+  --font-size-xxxl: 31px;
+  --font-size-xxxxl: 40px;
+  --font-size-xxxxxl: 60px;
+ 
+  --font-family-210gulim_090-regular: "210Gulim 090-Regular", Helvetica;
+  --font-family-gowun_dodum: "Gowun Dodum", Helvetica;
+  --font-family-im_hyemin: "IM_Hyemin", Helvetica;
+  --font-family-im_hyemin-bold: "IM_Hyemin-Bold", Helvetica;
+  --font-family-im_hyemin-regular: "IM_Hyemin-Regular", Helvetica;
+  --font-family-noto_sans: "Noto Sans", Helvetica;
+  --font-family-one_mobile_pop: "ONE Mobile POP", Helvetica;
+  --font-family-onemobile_pop-regular: "ONEMobile POP-Regular", Helvetica;
+  --font-family-sandollcoffeendonut_bold-regular: "SandollCoffeenDonut Bold-Regular", Helvetica;
+  --font-family-sandollcoffeendonut_medium-regular: "SandollCoffeenDonut Medium-Regular", Helvetica;
+}
+.imhyemin-bold-woody-brown-16px {
+  color: var(--woody-brown);
+  font-family: var(--font-family-im_hyemin-bold);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.notosans-semi-bold-mirage-28px {
+  color: var(--mirage);
+  font-family: var(--font-family-noto_sans);
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.sandollcoffeendonutbold-regular-bold-woody-brown-20px {
+  color: var(--woody-brown);
+  font-family: var(--font-family-sandollcoffeendonut_bold-regular);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.sandollcoffeendonutbold-regular-bold-woody-brown-16px {
+  color: var(--woody-brown);
+  font-family: var(--font-family-sandollcoffeendonut_bold-regular);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.onemobilepop-regular-normal-woody-brown-60px {
+  color: var(--woody-brown);
+  font-family: var(--font-family-onemobile_pop-regular);
+  font-size: var(--font-size-xxxxxl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.imhyemin-bold-scarpa-flow-16px {
+  color: var(--scarpa-flow);
+  font-family: var(--font-family-im_hyemin-bold);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.imhyemin-bold-dove-gray-16px {
+  color: var(--dove-gray);
+  font-family: var(--font-family-im_hyemin-bold);
+  font-size: var(--font-size-m);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.imhyemin-bold-black-31px {
+  color: var(--black);
+  font-family: var(--font-family-im_hyemin-bold);
+  font-size: var(--font-size-xxxl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.imhyemin-regular-normal-black-18px {
+  color: var(--black);
+  font-family: var(--font-family-im_hyemin-regular);
+  font-size: var(--font-size-l);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.onemobilepop-regular-normal-white-20px {
+  color: var(--white);
+  font-family: var(--font-family-onemobile_pop-regular);
+  font-size: var(--font-size-xl);
+  font-style: normal;
+  font-weight: 400;
+}
+
+.imhyemin-bold-woody-brown-25px {
+  color: var(--woody-brown);
+  font-family: var(--font-family-im_hyemin-bold);
+  font-size: var(--font-size-xxl);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.border-1-5px-iron {
+  border: 1.5px solid var(--iron);
+}
+
+.border-1-5px-dove-gray {
+  border: 1.5px solid var(--dove-gray);
+}

@@ -4681,6 +4681,7 @@ window.application = new Application();
 			</rect>
 		</svg>
 	</div>
+	
 	<div id="n___b">
 		<span>인근 맛집 탐방</span>
 	</div>
@@ -4807,9 +4808,11 @@ window.application = new Application();
 						<div id="Label_df" onclick="location.href='Choice1.jsp';">
 							<span>맞춤 추천 서비스</span>
 						</div>
+						
 						<div id="Label_dg">
 							<span>인근 맛집 탐방</span>
 						</div>
+						
 						<div id="Label_dh" onclick="location.href='Login.jsp';">
 							<span>로그인</span>
 						</div>
@@ -4998,7 +5001,7 @@ window.application = new Application();
 			<span>오늘은 어떤 메뉴가 끌리나요?</span>
 		</div>
 	</div>
-	<form id="go_search" action="testmapFinal (1).jsp">
+	<form id="go_search" action="testmapFinal.jsp">
 	<div id="n_143642">
 		<div id="input_field_">
 			<svg class="n_50">
