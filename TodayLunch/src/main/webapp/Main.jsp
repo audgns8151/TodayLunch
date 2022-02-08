@@ -4704,7 +4704,8 @@ window.application = new Application();
 		</div>
 		<div id="n_143630">
 			<div id="fleet">
-				<span>오점: 오늘의 점심</span>
+				<a onclick="location.href='Main.jsp'">오점: 오늘의 점심</a>
+				
 			</div>
 			<div id="Copyright__2021_UI8_LLC_All_ri">
 				<span>Copyright © 2022 인생모읍따.<br/>  All rights reserved</span>

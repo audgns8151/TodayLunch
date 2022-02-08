@@ -1,5 +1,7 @@
 select * from test_member;
 
+create table test_member(email varchar2(500), pw varchar2(500), nickname varchar2(500), dong varchar2(500))
+
 create table t_food(f_type varchar2(50),f_image varchar2(100),f_explain varchar2(4000));
 drop table t_food
 select * from T_FOOD
