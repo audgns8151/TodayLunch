@@ -1799,6 +1799,7 @@
 		font-weight: bold;
 		font-size: 16px;
 		color: rgba(64,51,50,1);
+		font-family: 'ONE-Mobile-POP';
 	}
 	#Label_el {
 		left: 350px;
@@ -1841,6 +1842,7 @@
 		font-weight: bold;
 		font-size: 16px;
 		color: rgba(64,51,50,1);
+		font-family: 'ONE-Mobile-POP';
 	}
 	#Label_eo {
 		left: 891px;
@@ -1883,6 +1885,7 @@
 		font-weight: bold;
 		font-size: 16px;
 		color: rgba(64,51,50,1);
+		font-family: 'ONE-Mobile-POP';
 	}
 	#Tabs_er {
 		position: absolute;
@@ -5459,6 +5462,14 @@ var Application = function() {
 
 window.application = new Application();
 </script>
+<style>
+@font-face {
+    font-family: 'ONE-Mobile-POP';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}        
+        </style>
 </head>
 <body>
 <form id = "Login" action = "LoginService" method="post" >
@@ -5812,7 +5823,7 @@ window.application = new Application();
 				</path>
 			</svg>
 		</div>
-		<div id="fleet">
+		<div id="fleet" >
 			<span>오점: 오늘의 점심</span>
 		</div>
 		<div id="Copyright__2021_UI8_LLC_All_ri">
@@ -5882,25 +5893,25 @@ window.application = new Application();
 						</svg>
 					</div>
 					<div id="n_143633">
-						<div id="Label_ek">
+						<div id="Label_ek" style="z-index:99" onclick="location.href='Main.jsp';">
 							<span> 오점 : 오늘의 점심                                                         </span>
 						</div>
-						<div id="Label_el">
+						<div id="Label_el" style="font-family: 'ONE-Mobile-POP';">
 							<span> 돌림판 게임</span>
 						</div>
-						<div id="Label_em">
+						<div id="Label_em" style="font-family: 'ONE-Mobile-POP';">
 							<span> 이상형 월드컵</span>
 						</div>
-						<div id="Label_en">
+						<div id="Label_en" style="z-index:99" onclick="location.href='Choice1.jsp';">
 							<span>맞춤 추천 서비스</span>
 						</div>
-						<div id="Label_eo">
+						<div id="Label_eo" style="font-family: 'ONE-Mobile-POP';">
 							<span>인근 맛집 탐방</span>
 						</div>
-						<div id="Label_ep">
+						<div id="Label_ep" style="font-family: 'ONE-Mobile-POP';">
 							<span>로그인</span>
 						</div>
-						<div id="Label_eq">
+						<div id="Label_eq" style="z-index:99" onclick="location.href='SignUp.jsp';">
 							<span>회원가입</span>
 						</div>
 					</div>

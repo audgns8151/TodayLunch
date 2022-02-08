@@ -4630,7 +4630,7 @@ window.application = new Application();
 						</svg>
 					</div>
 					<div id="n_143633">
-						<div id="Label_b">
+						<div id="Label_b" onclick="location.href='Main.jsp';">
 							<span> 오점 : 오늘의 점심                          </span>
 						</div>
 						<div id="Label_ca">

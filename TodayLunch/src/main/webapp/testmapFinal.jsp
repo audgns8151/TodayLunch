@@ -400,14 +400,14 @@
 								<div class="area"></div>
 								<div class="x143633 imhyemin-bold-woody-brown-16px">
 									<div class="label-container">
-<p style="font-family:'ONE-Mobile-POP';">오점 : 오늘의 점심</p>
-										<div class="label-2">돌림판 게임</div>
+<p style="font-family:'ONE-Mobile-POP';" onclick="location.href='Main.jsp';">오점 : 오늘의 점심</p>
+										<div class="label-2" style="font-family: 'ONE-Mobile-POP';">돌림판 게임</div>
 									</div>
-									<div class="label">이상형 월드컵</div>
-									<div class="label-3">맞춤 추천 서비스</div>
-									<div class="label">인근 맛집 탐방</div>
-									<div class="label-4">로그인</div>
-									<div class="label-5">회원가입</div>
+									<div class="label" style="font-family: 'ONE-Mobile-POP';" >이상형 월드컵</div>
+									<div class="label-3" style="font-family: 'ONE-Mobile-POP';" onclick="location.href='Choice1.jsp';">맞춤 추천 서비스</div>
+									<div class="label" style="font-family: 'ONE-Mobile-POP';">인근 맛집 탐방</div>
+									<div class="label-4" style="font-family: 'ONE-Mobile-POP';">로그인</div>
+									<div class="label-5" style="font-family: 'ONE-Mobile-POP';">회원가입</div>
 								</div>
 							</div>
 							<div class="tabs">

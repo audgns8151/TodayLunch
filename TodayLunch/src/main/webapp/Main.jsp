@@ -4617,6 +4617,9 @@ var Application = function() {
 
 window.application = new Application();
 </script>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 슬라이더</title>
+    <link rel="stylesheet" href="./slider2.css">
 </head>
 <body>
 <div id="mainFFF">
@@ -4711,9 +4714,9 @@ window.application = new Application();
 	<div id="n_143631">
 		<img id="Rectangle" src="Rectangle.png" srcset="Rectangle.png 1x, Rectangle@2x.png 2x">
 			
-		<img id="Rectangle_cf" src="Rectangle_cf.png" srcset="Rectangle_cf.png 1x, Rectangle_cf@2x.png 2x">
+		<a href="https://place.map.kakao.com/368808209"><img id="Rectangle_cf" src="Rectangle_cf.png" srcset="Rectangle_cf.png 1x, Rectangle_cf@2x.png 2x"></a>
 			
-		<img id="Rectangle_cg" src="Rectangle_cg.png" srcset="Rectangle_cg.png 1x, Rectangle_cg@2x.png 2x">
+		<a href="https://place.map.kakao.com/855296600"><img id="Rectangle_cg" src="Rectangle_cg.png" srcset="Rectangle_cg.png 1x, Rectangle_cg@2x.png 2x"></a>
 			
 		<img id="Rectangle_ch" src="Rectangle_ch.png" srcset="Rectangle_ch.png 1x, Rectangle_ch@2x.png 2x">
 			
@@ -5033,7 +5036,22 @@ window.application = new Application();
 	</form>
 	<img id="Rectangle_fh" src="Rectangle_fh.png" srcset="Rectangle_fh.png 1x, Rectangle_fh@2x.png 2x">
 		
-	<img id="n__fi" src="n__fi.png" srcset="n__fi.png 1x, n__fi@2x.png 2x">
+	<div class="slider">
+    <input type="radio" name="slide" id="slide1" checked>
+    <input type="radio" name="slide" id="slide2">
+    <input type="radio" name="slide" id="slide3">
+
+    <ul id="imgholder" class="imgs">
+        <li><img src="realslide.png"></li>
+        <li><img src="realslide2.png"></li>
+        <li><img src="realslide3.png"></li>
+    </ul>
+    <div class="bullets">
+        <label for="slide1">&nbsp;</label>
+        <label for="slide2">&nbsp;</label>
+        <label for="slide3">&nbsp;</label>
+    </div>
+</div>
 		
 	<img id="Rectangle_fj" src="Rectangle_fj.png" srcset="Rectangle_fj.png 1x, Rectangle_fj@2x.png 2x" onclick="location.href='basic_code_wheel/index.html';">
 		

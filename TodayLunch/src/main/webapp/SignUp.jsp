@@ -865,6 +865,7 @@
 		font-weight: bold;
 		font-size: 16px;
 		color: rgba(64,51,50,1);
+		font-family: ONE-Mobile-POP;
 	}
 	#Label_cj {
 		left: 350px;
@@ -907,6 +908,7 @@
 		font-weight: bold;
 		font-size: 16px;
 		color: rgba(64,51,50,1);
+		
 	}
 	#Label_cm {
 		left: 891px;
@@ -935,6 +937,7 @@
 		font-weight: bold;
 		font-size: 16px;
 		color: rgba(64,51,50,1);
+		font-family: ONE-Mobile-POP;
 	}
 	#Label_co {
 		left: 1260px;
@@ -4525,6 +4528,14 @@ var Application = function() {
 
 window.application = new Application();
 </script>
+<style>
+@font-face {
+    font-family: 'ONE-Mobile-POP';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}        
+        </style>
 </head>
 <body>
 <form id = "SignUp" action="JoinService" method="post">
@@ -4735,25 +4746,25 @@ window.application = new Application();
 						</svg>
 					</div>
 					<div id="n_143633">
-						<div id="Label_ci" style="z-index:99" onclick="location.href='Main.jsp';">
+						<div id="Label_ci" style="z-index:99 " onclick="location.href='Main.jsp';">
 							<span> 오점 : 오늘의 점심                                                         </span>
 						</div>
-						<div id="Label_cj">
+						<div id="Label_cj" style="font-family: 'ONE-Mobile-POP';">
 							<span> 돌림판 게임</span>
 						</div>
-						<div id="Label_ck">
+						<div id="Label_ck" style="font-family: 'ONE-Mobile-POP';">
 							<span> 이상형 월드컵</span>
 						</div>
-						<div id="Label_cl">
+						<div id="Label_cl" style="font-family: 'ONE-Mobile-POP';">
 							<span>맞춤 추천 서비스</span>
 						</div>
-						<div id="Label_cm">
+						<div id="Label_cm" style="font-family: 'ONE-Mobile-POP';">
 							<span>인근 맛집 탐방</span>
 						</div>
-						<div id="Label_cn">
+						<div id="Label_cn" style="z-index:99" onclick="location.href='Login.jsp';" >
 							<span>로그인</span>
 						</div>
-						<div id="Label_co">
+						<div id="Label_co" style="font-family: 'ONE-Mobile-POP';">
 							<span>회원가입</span>
 						</div>
 					</div>
