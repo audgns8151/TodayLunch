@@ -368,7 +368,14 @@
 <script charset="UTF-8"
 	src="http://t1.daumcdn.net/mapjsapi/js/libs/services/1.0.2/services.js"></script>
 
-
+<style>
+@font-face {
+    font-family: 'ONE-Mobile-POP';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}        
+        </style>
 
 </head>
 
@@ -393,7 +400,7 @@
 								<div class="area"></div>
 								<div class="x143633 imhyemin-bold-woody-brown-16px">
 									<div class="label-container">
-										<p class="label-1">오점 : 오늘의 점심</p>
+<p style="font-family:'ONE-Mobile-POP';">오점 : 오늘의 점심</p>
 										<div class="label-2">돌림판 게임</div>
 									</div>
 									<div class="label">이상형 월드컵</div>

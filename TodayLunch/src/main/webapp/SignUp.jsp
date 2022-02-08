@@ -4735,7 +4735,7 @@ window.application = new Application();
 						</svg>
 					</div>
 					<div id="n_143633">
-						<div id="Label_ci">
+						<div id="Label_ci" style="z-index:99" onclick="location.href='Main.jsp';">
 							<span> 오점 : 오늘의 점심                                                         </span>
 						</div>
 						<div id="Label_cj">
