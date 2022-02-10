@@ -29,7 +29,7 @@
 
 ### A. **오:점. 오늘의 점심** 유스케이스
 
-![오점_유스케이스.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/1e35338b-8a43-490f-8f50-8cf689dc6945/오점_유스케이스.png)
+![오점_유스케이스](https://user-images.githubusercontent.com/8120558/153363054-1e073ddd-5504-4284-9d61-0f7d18d7f6f8.png)
 
 ## 4. 개발 및 작업 환경
 | 종류 | 개발 환경 및 사용툴 |
@@ -46,15 +46,13 @@
 
 ## 6. 활용 사진 예시
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2b565088-8503-4900-91d1-93fcb98aed41/Untitled.png)
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/47a62d60-df8a-4e23-9230-4ceb3934f378/Untitled.png)
-
-![KakaoTalk_20220208_205744115.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/51241bad-425a-43f2-bb08-6c67c4d050ff/KakaoTalk_20220208_205744115.png)
+![KakaoTalk_20220208_205744115](https://user-images.githubusercontent.com/8120558/153363092-3a2a07bd-d9b5-4744-932a-892ef9db7910.png)
+![Untitled 1](https://user-images.githubusercontent.com/8120558/153363102-cf91841b-6a0f-40b0-9dfd-c054afc8c26e.png)
+![Untitled](https://user-images.githubusercontent.com/8120558/153363111-3dff5ce7-3fa9-422f-984d-867f84de2bb6.png)
 
 ## 6. 팀원 단위 업무 분장 및 결과표
 
-팀원 (가나다순): 김태현(팀장), 김한진, 윤영, 장지원, 조석근, 이상 5인.
+팀원 (가나다순): 김*현(팀장), 김*진, 윤*영, 장*원, 조*근, 이상 5인.
 
 | 이름(가나다 순) | 업무 분야 | 분장업무 | 수행결과 |
 | --- | --- | --- | --- |
