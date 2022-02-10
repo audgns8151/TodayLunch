@@ -1859,6 +1859,7 @@ var Application = function() {
 		}
 		else {
 			// no view found
+			
 		}
 	
 		if (self.showUpdateNotification) {
