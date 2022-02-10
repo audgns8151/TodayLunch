@@ -37,7 +37,7 @@
     <artifactId>tomcat7-maven-plugin</artifactId>
     <version>2.2</version>
     <configuration>
-        <server>github</server>
+        <server>tomcat</server>
         <path>/${project.build.finalName}</path>
         <url>${my.url}</url>
         <username>${my.username}</username>
