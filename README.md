@@ -77,6 +77,10 @@
 - 자료 리서치
 - 이미지 보정
 
+## 대표이미지
+![todaylunch1](https://user-images.githubusercontent.com/97660654/153348756-df21e0d6-d31f-44a3-9916-f5b108025f0a.png)
+## 서비스 URL
+
 <hr/>
 
 
