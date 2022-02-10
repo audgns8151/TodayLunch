@@ -43,6 +43,7 @@
 						<username>${my.username}</username>
 						<password>${my.password}</password>
 						<update>true</update>
+						<encoding>MS949</encoding>
 					</configuration>
 				</plugin>
 			</plugins>
