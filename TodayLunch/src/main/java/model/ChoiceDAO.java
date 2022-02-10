@@ -21,13 +21,13 @@ public class ChoiceDAO {
 		try {
 
 			Class.forName("oracle.jdbc.driver.OracleDriver");
-//
-//			String url = "jdbc:oracle:thin:@project-db-stu.ddns.net:1524:xe";
-//			String dbid = "campus_e_1_0115";
-//			String dbpw = "smhrd1";
-			String url = "jdbc:oracle:thin:@localhost:1521:xe";
-			String dbid = "hr";
-			String dbpw = "hr";
+
+			String url = "jdbc:oracle:thin:@project-db-stu.ddns.net:1524:xe";
+			String dbid = "campus_e_1_0115";
+			String dbpw = "smhrd1";
+//			String url = "jdbc:oracle:thin:@localhost:1521:xe";
+//			String dbid = "hr";
+//			String dbpw = "hr";
 			
 
 			conn = DriverManager.getConnection(url, dbid, dbpw);

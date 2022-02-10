@@ -1026,7 +1026,7 @@
 					<div class="x4829"></div>
 					<div class="overlap-group">
 						<img class="x4691" src="file---4691-1@1x.png">
-						<div class="fleet imhyemin-bold-black-31px">오점: 오늘의 점심</div>
+						<div class="fleet imhyemin-bold-black-31px" onclick="location.href='Main.jsp'">오점: 오늘의 점심</div>
 						<div class="copyright-2021-ui8 imhyemin-regular-normal-black-18px">
 							Copyright © 2022 인생모읍따.<br>&nbsp;&nbsp;All rights reserved
 						</div>
