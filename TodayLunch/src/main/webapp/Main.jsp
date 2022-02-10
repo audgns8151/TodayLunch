@@ -1711,7 +1711,7 @@
 ///////////////////////////////////////
 // INITIALIZATION
 ///////////////////////////////////////
- 
+  
 /**
  * Functionality for scaling, showing by media query, and navigation between multiple pages on a single page. 
  * Code subject to change.
