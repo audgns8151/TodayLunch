@@ -23,7 +23,11 @@
 			<artifactId>tomcat-servlet-api</artifactId>
 			<version>8.5.38</version>
 		</dependency>
-		
+		<dependency>
+			<groupId>com.oracle.database.jdbc</groupId>
+			<artifactId>ojdbc6</artifactId>
+			<version>11.2.0.4</version>
+		</dependency>
 		
 
 	</dependencies>
@@ -37,7 +41,7 @@
     <artifactId>tomcat7-maven-plugin</artifactId>
     <version>2.2</version>
     <configuration>
-        <server>tomcat</server>
+        <server>gitgub</server>
         <path>/${project.build.finalName}</path>
         <url>${my.url}</url>
         <username>${my.username}</username>
